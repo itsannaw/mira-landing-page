@@ -5,6 +5,8 @@ export default {
     extend: {
       colors: {
         violet: "#6E78D1",
+        dark_violet: "#525FC9",
+        light_orange: "#FFC468",
       },
     },
   },
