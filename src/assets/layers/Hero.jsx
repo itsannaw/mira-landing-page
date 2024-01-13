@@ -19,7 +19,7 @@ const Hero = () => {
               <div className="flex flex-col max-w-96 gap-5">
                 <span className="text-lg leading-[22px] tracking-[0.7px]">
                   Познакомьтесь с приложением «Мира» – трекером эмоций с
-                  возможностью <br /> выполнять особые упражнения для <br />{" "}
+                  возможностью <br /> выполнять особые упражнения для <br />
                   улучшения своего состояния.
                 </span>
                 <span className="text-lg leading-[22px] tracking-[0.7px]">
