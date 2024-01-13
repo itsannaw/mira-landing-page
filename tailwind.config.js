@@ -8,6 +8,12 @@ export default {
         dark_violet: "#525FC9",
         light_orange: "#FFC468",
       },
+      backgroundImage: {
+        hero: "url('/src/assets/images/HeroBG.png')",
+      },
+      boxShadow: {
+        hero: "0px 0px 11.221px 0px rgba(0, 0, 0, 0.12)",
+      },
     },
   },
   plugins: [],
