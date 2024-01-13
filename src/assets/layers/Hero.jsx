@@ -4,7 +4,7 @@ import { BUTTON_TYPES } from "../../const";
 const Hero = () => {
   return (
     <section>
-      <div className="flex mt-56">
+      <div className="flex mt-60">
         <div className="flex flex-col justify-center max-h-[660px] bg-hero bg-bottom bg-no-repeat rounded-[40px] bg-[length:1440px_560px] w-full px-[130px] pt-[50px] pb-[160px]">
           <div className="flex relative max-[1045px] w-full bg-white rounded-[40px] shadow-hero">
             <div className="flex flex-col mt-10 ml-14 mb-[74px] gap-7">
