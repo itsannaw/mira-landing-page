@@ -7,6 +7,7 @@ export default {
         violet: "#6E78D1",
         dark_violet: "#525FC9",
         light_orange: "#FFC468",
+        black: "#2D2D2D",
       },
       backgroundImage: {
         hero: "url('/src/assets/images/HeroBG.png')",
