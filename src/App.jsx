@@ -1,4 +1,5 @@
 import "./App.css";
+import About from "./assets/layers/About";
 import Header from "./assets/layers/Header";
 import Hero from "./assets/layers/Hero";
 
@@ -7,6 +8,7 @@ function App() {
     <>
       <Header />
       <Hero />
+      <About />
     </>
   );
 }
