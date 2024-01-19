@@ -30,16 +30,16 @@ const About = () => {
           </TextAboutApp>
         </div>
         <div className="flex flex-col max-w-[479px] gap-10">
-          <TextAboutApp type={TEXT_ABOUT_TYPES.SMILE}>
+          <TextAboutApp type={TEXT_ABOUT_TYPES.CHECK}>
             Чтобы лучше разобраться в себе, в своих чувствах и мыслях, научиться
             жить в гармонии с собой и другими, было создано приложение «Мира».
           </TextAboutApp>
-          <TextAboutApp type={TEXT_ABOUT_TYPES.DIALOGUE}>
+          <TextAboutApp type={TEXT_ABOUT_TYPES.LIKE}>
             Мира не просто играет роль спутника, но и является другом, с которым
             легко делиться переживаниями. Она подбирает подходящие варианты
             небольших, но эффективных техник, опираясь на психологическое
-            состояние, и формирует аналитику, где можно смотреть, что влияет
-            на ментальное здоровье.
+            состояние, и формирует аналитику, где можно смотреть, что влияет на
+            ментальное здоровье.
           </TextAboutApp>
         </div>
       </div>

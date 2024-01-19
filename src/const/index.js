@@ -10,3 +10,9 @@ export const TEXT_ABOUT_TYPES = {
   LIKE: "LIKE",
   CHECK: "CHECK",
 };
+
+export const HOW_IT_WORKS_CARDS = {
+  PLUS: "PLUS",
+  CHART: "CHART",
+  PRAXIS: "PRAXIS",
+};
