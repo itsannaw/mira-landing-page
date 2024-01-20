@@ -5,12 +5,11 @@ import { HOW_IT_WORKS_CARDS } from "../../const";
 
 const HowItWorks = () => {
   return (
-    <section className="flex mt-[120px] flex-col gap-10">
-      <div className="flex gap-[508px]">
-        <div className="">
+    <section className="flex relative mt-[120px] flex-col gap-10">
+        <div className="absolute left-0">
           <Hashtag># Фичи и контент</Hashtag>
         </div>
-        <div className="flex flex-col max-w-[480px] gap-[25px]">
+        <div className="flex absolute left-[calc(50%)]  flex-col max-w-[480px] gap-[25px]">
           <span className=" text-black text-[40px] leading-[44px] tracking-[0.5px]">
             Как работает <br /> приложение?
           </span>
@@ -19,8 +18,7 @@ const HowItWorks = () => {
             которые делают приложение таким полезным
           </span>
         </div>
-      </div>
-      <div className="flex justify-between">
+      <div className="flex justify-between mt-[220px]">
         <Card type={HOW_IT_WORKS_CARDS.PLUS}>
           Вы фиксируете эмоции и мысли, которые с ними связаны, в любое удобное
           для вас время. «Мира» запоминает эти данные и бережно хранит их на

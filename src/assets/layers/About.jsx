@@ -4,19 +4,12 @@ import { TEXT_ABOUT_TYPES } from "../../const";
 
 const About = () => {
   return (
-    <section className="flex mt-[120px] flex-col gap-10">
-      <div className="flex gap-[508px]">
-        <div className="">
+    <section className="flex relative mt-[120px] flex-col gap-10">
+        <div className="absolute">
           <Hashtag># О приложении</Hashtag>
         </div>
-        <div className="text-black text-[40px] leading-[44px] tracking-[0.5px]">
-          <span>
-            Зачем было создано <br /> это приложение?
-          </span>
-        </div>
-      </div>
-      <div className="flex justify-center max-w-[1320px] w-full gap-[60px]">
-        <div className="flex flex-col max-w-[397px] w-full gap-10">
+      <div className="flex justify-center gap-[60px]">
+        <div className="flex flex-col max-w-[397px] mt-[128px] w-full gap-10">
           <TextAboutApp type={TEXT_ABOUT_TYPES.SMILE}>
             На протяжении жизни мы все испытываем самые разные эмоции и не
             всегда замечаем, какие обстоятельства на самом деле их вызывают.
@@ -30,6 +23,9 @@ const About = () => {
           </TextAboutApp>
         </div>
         <div className="flex flex-col max-w-[479px] gap-10">
+          <span className="text-black text-[40px] leading-[44px] tracking-[0.5px]">
+            Зачем было создано <br /> это приложение?
+          </span>
           <TextAboutApp type={TEXT_ABOUT_TYPES.CHECK}>
             Чтобы лучше разобраться в себе, в своих чувствах и мыслях, научиться
             жить в гармонии с собой и другими, было создано приложение «Мира».

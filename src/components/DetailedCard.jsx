@@ -77,7 +77,7 @@ const DetailedCard = (props) => {
       />
 
       <div
-        className={`flex flex-col relative left-[calc(50%)] gap-5 max-w-[480px] w-full ${cards.text_color}`}
+        className={`flex flex-col relative left-[calc(50%-10px)] gap-5 max-w-[480px] w-full ${cards.text_color}`}
       >
         <span className="text-[40px] leading-[44px] tracking-[0.5px]">
           {cards.text1}

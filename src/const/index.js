@@ -16,3 +16,7 @@ export const HOW_IT_WORKS_CARDS = {
   CHART: "CHART",
   PRAXIS: "PRAXIS",
 };
+
+export const TEAM = {
+  ANDROID: "ANDROID",
+}
