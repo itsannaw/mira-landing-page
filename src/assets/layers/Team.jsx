@@ -1,3 +1,5 @@
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination } from "swiper/modules";
 import Button from "../../components/Button";
 import Hashtag from "../../components/Hashtag";
 import PositionsTeam from "../../components/PositionsTeam";
@@ -14,39 +16,35 @@ const Team = () => {
           </Hashtag>
         </div>
       </div>
-      <div className="flex justify-center gap-[60px]">
-        <div>
-          <div className="flex flex-col gap-[14px] mt-[114px]">
-            <PositionsTeam type={TEAM.ANDROID} />
-            <PositionsTeam type={TEAM.ANDROID} />
-            <PositionsTeam type={TEAM.ANDROID} />
-            <PositionsTeam type={TEAM.ANDROID} />
-            <PositionsTeam type={TEAM.ANDROID} />
-            <PositionsTeam type={TEAM.ANDROID} />
-            <PositionsTeam type={TEAM.ANDROID} />
-            <PositionsTeam type={TEAM.ANDROID} />
-          </div>
-          <div className="flex justify-center mt-[20px] gap-4">
-            <svg
-              width="12"
-              height="12"
-              viewBox="0 0 12 12"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <circle cx="6" cy="6" r="5.5" stroke="#6E78D1" />
-            </svg>
-
-            <svg
-              width="12"
-              height="12"
-              viewBox="0 0 12 12"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <circle cx="6" cy="6" r="5.5" stroke="#6E78D1" />
-            </svg>
-          </div>
+      <div className="flex relative justify-center gap-[60px]">
+        <div className="items-start mt-[120px] w-[400px]">
+          <Swiper
+            modules={[Pagination]}
+            pagination={{ clickable: true }}
+          >
+            <SwiperSlide>
+              <div className="flex flex-col items-start gap-[14px] mb-12">
+                <PositionsTeam type={TEAM.ANDROID} />
+                <PositionsTeam type={TEAM.ANDROID} />
+                <PositionsTeam type={TEAM.ANDROID} />
+                <PositionsTeam type={TEAM.ANDROID} />
+                <PositionsTeam type={TEAM.ANDROID} />
+                <PositionsTeam type={TEAM.ANDROID} />
+                <PositionsTeam type={TEAM.ANDROID} />
+                <PositionsTeam type={TEAM.ANDROID} />
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="flex flex-col items-start gap-[14px]">
+                <PositionsTeam type={TEAM.ANDROID} />
+                <PositionsTeam type={TEAM.ANDROID} />
+                <PositionsTeam type={TEAM.ANDROID} />
+                <PositionsTeam type={TEAM.ANDROID} />
+                <PositionsTeam type={TEAM.ANDROID} />
+                <PositionsTeam type={TEAM.ANDROID} />
+              </div>
+            </SwiperSlide>
+          </Swiper>
         </div>
         <div className="flex flex-col gap-[26px] max-w-[480px] w-full text-black text-lg leading-[22px] tracking-[0.7px]">
           <span className=" text-black text-[40px] leading-[44px] tracking-[0.5px]">
