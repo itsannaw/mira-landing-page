@@ -4,7 +4,7 @@ import { TEXT_ABOUT_TYPES } from "../../const";
 
 const About = () => {
   return (
-    <section className="flex relative mt-[120px] flex-col gap-10">
+    <section id="about" className="flex relative mt-[120px] flex-col gap-10">
         <div className="absolute">
           <Hashtag># О приложении</Hashtag>
         </div>

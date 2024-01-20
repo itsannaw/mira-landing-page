@@ -56,7 +56,7 @@ const Hero = () => {
             </div>
           </div>
           <div className="relative flex justify-end mt-7">
-            <Button type={BUTTON_TYPES.BIG_ORANGE} className="bg-amber-400 ">
+            <Button type={BUTTON_TYPES.BIG_ORANGE}>
               <span className="text-2xl font-semibold leading-7 tracking-[0.1px]">
                 Хочу узнать о приложении
               </span>

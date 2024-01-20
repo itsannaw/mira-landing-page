@@ -7,7 +7,7 @@ const SIZE_MAPPER = {
   [BUTTON_TYPES.BIG]:
     "text-white bg-violet hover:bg-dark_violet active:bg-light_orange active:text-black py-4 rounded-2xl px-6",
   [BUTTON_TYPES.BIG_ORANGE]:
-    "text-black bg-light_orange py-4 rounded-2xl px-14",
+    "text-black bg-light_orange py-4 rounded-2xl px-14 cursor-default",
 };
 
 const Button = (props) => {

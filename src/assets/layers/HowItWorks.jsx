@@ -5,7 +5,7 @@ import { HOW_IT_WORKS_CARDS } from "../../const";
 
 const HowItWorks = () => {
   return (
-    <section className="flex relative mt-[120px] flex-col gap-10">
+    <section id="works" className="flex relative mt-[120px] flex-col gap-10">
         <div className="absolute left-0">
           <Hashtag># Фичи и контент</Hashtag>
         </div>

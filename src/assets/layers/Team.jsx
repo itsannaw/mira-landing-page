@@ -8,16 +8,11 @@ const Team = () => {
   return (
     <section className="flex relative mt-[120px] justify-center flex-col">
       <div className="flex">
-        <div className="absolute left-0">
+        <div id="team" className="absolute left-0">
           <Hashtag>
             <span className="px-5"># Команда</span>
           </Hashtag>
         </div>
-        {/* <div className="flex flex-col max-w-[480px] gap-[25px]">
-          <span className=" text-black text-[40px] leading-[44px] tracking-[0.5px]">
-            Как разработал <br /> приложение?
-          </span>
-        </div> */}
       </div>
       <div className="flex justify-center gap-[60px]">
         <div>
@@ -31,12 +26,26 @@ const Team = () => {
             <PositionsTeam type={TEAM.ANDROID} />
             <PositionsTeam type={TEAM.ANDROID} />
           </div>
-          <div className="flex justify-center mt-[14px] gap-4">
-            <img src="/src/assets/images/team/pagtest.svg" alt="pagination" />
-            <img
-              src="/src/assets/images/team/pagination.svg"
-              alt="pagination"
-            />
+          <div className="flex justify-center mt-[20px] gap-4">
+            <svg
+              width="12"
+              height="12"
+              viewBox="0 0 12 12"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="6" cy="6" r="5.5" stroke="#6E78D1" />
+            </svg>
+
+            <svg
+              width="12"
+              height="12"
+              viewBox="0 0 12 12"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="6" cy="6" r="5.5" stroke="#6E78D1" />
+            </svg>
           </div>
         </div>
         <div className="flex flex-col gap-[26px] max-w-[480px] w-full text-black text-lg leading-[22px] tracking-[0.7px]">
@@ -68,13 +77,14 @@ const Team = () => {
             <SearchList>Fullstack superhero </SearchList>
           </div>
           <div>
-            <Button type={BUTTON_TYPES.BIG}>
-              <span className="px-10 text-2xl font-semibold leading-7 tracking-[0.1px]">
-                Хочу в вашу команду
-              </span>
-            </Button>
+            <form action="https://t.me/L_Tyler" target="_blank">
+              <Button type={BUTTON_TYPES.BIG}>
+                <span className="px-10 text-2xl font-semibold leading-7 tracking-[0.1px]">
+                  Хочу в вашу команду
+                </span>
+              </Button>
+            </form>
           </div>
-          <div></div>
         </div>
       </div>
     </section>

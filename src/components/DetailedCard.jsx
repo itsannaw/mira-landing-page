@@ -5,7 +5,7 @@ const CARDS_MAPPER = {
   [HOW_IT_WORKS_CARDS.PLUS]: {
     bg_color: "bg-dark_violet",
     text_color: "text-white",
-    size_phone: "w-[457px] h-[523px] left-[175px]",
+    size_phone: "w-[457px] h-[523px] left-[165px]",
     phone: "/src/assets/images/works/PhonePlus.png",
     alt: "phone_plus",
     text1: "Как вести записи",
@@ -27,7 +27,7 @@ const CARDS_MAPPER = {
   [HOW_IT_WORKS_CARDS.CHART]: {
     bg_color: "bg-[#EFECFC]",
     text_color: "text-black",
-    size_phone: "w-[500px] h-[585px] left-[140px]",
+    size_phone: "w-[500px] h-[585px] left-[130px]",
     phone: "/src/assets/images/works/PhoneChart.png",
     alt: "phone_chart",
     text1: "Как разобраться в статистике",
@@ -41,7 +41,7 @@ const CARDS_MAPPER = {
   [HOW_IT_WORKS_CARDS.PRAXIS]: {
     bg_color: "bg-violet",
     text_color: "text-white",
-    size_phone: "w-[505px] h-[585px] left-[140px] bottom-[-5px]",
+    size_phone: "w-[505px] h-[585px] left-[130px] bottom-[-5px]",
     phone: "/src/assets/images/works/PhonePraxis.png",
     alt: "phone_praxis",
     text1: "Как проходить упражнения",
