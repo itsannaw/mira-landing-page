@@ -48,7 +48,7 @@ const Team = () => {
         </div>
         <div className="flex flex-col gap-[26px] max-w-[480px] w-full text-black text-lg leading-[22px] tracking-[0.7px]">
           <span className=" text-black text-[40px] leading-[44px] tracking-[0.5px]">
-            Как разработал <br /> приложение?
+            Кто разработал <br /> приложение?
           </span>
           <span>
             Мира была разработана командой из N человек. Над приложением

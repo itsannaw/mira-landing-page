@@ -61,7 +61,7 @@ const DetailedCard = (props) => {
 
   return (
     <div
-      className={`flex relative overflow-hidden w-full h-[625px] pt-10  ${cards.bg_color} rounded-[20px] z-10`}
+      className={`mira-detailed-card flex relative overflow-hidden w-full h-[625px] pt-10  ${cards.bg_color} rounded-[20px] z-10`}
     >
       <div>
         <img
@@ -92,6 +92,7 @@ const DetailedCard = (props) => {
         </span>
         <img src="/src/assets/images/works/border.png" alt="#" />
       </div>
+      <div className="mira-detailed-card-end"></div>
     </div>
   );
 };
