@@ -17,7 +17,7 @@ const Footer = () => {
           </div>
           <div>
             <a href="https://t.me/L_Tyler" target="_blank" rel="noreferrer">
-              <img src="src/public/images/footer/Telegram.svg" alt="telegram" />
+              <img src="/images/footer/Telegram.svg" alt="telegram" />
             </a>
           </div>
         </div>
