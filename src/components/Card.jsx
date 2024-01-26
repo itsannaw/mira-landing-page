@@ -3,19 +3,19 @@ import { HOW_IT_WORKS_CARDS } from "../const";
 
 const CARDS_MAPPER = {
   [HOW_IT_WORKS_CARDS.PLUS]: {
-    src: "/src/public/images/works/Plus.svg",
+    src: "/images/works/Plus.svg",
     alt: "plus",
     button_text: "Записи (чек-ины)",
     number: "01",
   },
   [HOW_IT_WORKS_CARDS.CHART]: {
-    src: "/src/public/images/works/Chart.svg",
+    src: "/images/works/Chart.svg",
     alt: "chart",
     button_text: "Статистика",
     number: "02",
   },
   [HOW_IT_WORKS_CARDS.PRAXIS]: {
-    src: "/src/public/images/works/Praxis.svg",
+    src: "/images/works/Praxis.svg",
     alt: "praxis",
     button_text: "Упражнения",
     number: "03",
@@ -40,11 +40,11 @@ const Card = (props) => {
         </div>
       </div>
       <div className="flex flex-col  justify-between gap-5 h-[195px]">
-        <img src="/src/public/images/works/border.png" alt="" />
+        <img src="/images/works/border.png" alt="" />
         <span className="h-[150px] text-base leading-[22px] tracking-[0.1px]">
           {props.children}
         </span>
-        <img src="/src/public/images/works/border.png" alt="" />
+        <img src="/images/works/border.png" alt="" />
       </div>
       <span className="flex justify-center text-[200px] text-violet font-medium leading-[170px] opacity-50">
         {cards.number}

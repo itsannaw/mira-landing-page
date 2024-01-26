@@ -7,10 +7,7 @@ const Footer = () => {
             Приложение создано при поддержке
           </span>
           <a href="https://pnpl.site" target="_blank" rel="noreferrer">
-            <img
-              src="/src/public/images/footer/Pineapple.svg"
-              alt="Pineapple Practice"
-            />
+            <img src="/images/footer/Pineapple.svg" alt="Pineapple Practice" />
           </a>
         </div>
         <div className="flex flex-col items-end gap-2">

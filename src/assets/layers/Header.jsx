@@ -33,7 +33,7 @@ const Header = () => {
       <div className="flex fixed w-[calc(min(100%,1440px)-120px)] bg-white z-20 left-[10px] lg:left-[calc(50%-660px)] top-0 justify-between items-center py-3 border-b-2 border-[#CFD0DA]">
         <div>
           <a href="">
-            <img src="/src/public/images/Logo.svg" alt="#" />
+            <img src="/images/Logo.svg" alt="#" />
           </a>
         </div>
         <div className="flex justify-between items-center gap-10">

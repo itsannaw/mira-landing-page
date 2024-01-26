@@ -6,7 +6,7 @@ const CARDS_MAPPER = {
     bg_color: "bg-dark_violet",
     text_color: "text-white",
     size_phone: "w-[457px] h-[523px] left-[132px]",
-    phone: "/src/public/images/works/Mockups1.png",
+    phone: "/images/works/Mockups1.png",
     alt: "phone_plus",
     border: "border_light.png",
     text1: "Как вести записи",
@@ -22,14 +22,14 @@ const CARDS_MAPPER = {
     ),
     text3:
       "Записи хранятся на главной странице приложения, их можно открывать, редактировать, удалять и отправлять своему специалисту.",
-    number: "/src/public/images/works/1.svg",
+    number: "/images/works/1.svg",
     location_number: "right-20",
   },
   [HOW_IT_WORKS_CARDS.CHART]: {
     bg_color: "bg-[#EFECFC]",
     text_color: "text-black",
     size_phone: "w-[500px] h-[585px] left-[69px]",
-    phone: "/src/public/images/works/Mockups2.png",
+    phone: "/images/works/Mockups2.png",
     alt: "phone_chart",
     border: "border_dark.png",
     text1: "Как разобраться в статистике",
@@ -37,14 +37,14 @@ const CARDS_MAPPER = {
       "Мира составляет статистику очень простым и понятным способом. Она формируется на основе обстоятельств (факторов), которые на протяжении жизни влияют на эмоции.",
     text3:
       "Таким образом, зайдя в статистику, можно сразу понять, какие сферы жизни влияют на вас больше всего, какие из них дают больше отрицательных эмоций, а какие – положительных.",
-    number: "/src/public/images/works/2.svg",
+    number: "/images/works/2.svg",
     location_number: "right-0 bottom-[0.5px]",
   },
   [HOW_IT_WORKS_CARDS.PRAXIS]: {
     bg_color: "bg-violet",
     text_color: "text-white",
     size_phone: "w-[565px] h-[595px] left-[9px] bottom-[-5px]",
-    phone: "/src/public/images/works/Mockups3.png",
+    phone: "/images/works/Mockups3.png",
     alt: "phone_praxis",
     border: "border_light.png",
     text1: "Как проходить упражнения",
@@ -52,7 +52,7 @@ const CARDS_MAPPER = {
       "Мира разработана таким образом, что она сама предлагает упражнение, которое подходит под ситуацию. В конце чек-ина она подбирает технику, основываясь на информации записи.",
     text3:
       "Техники, которые Мира подобрала для пользователя, можно найти в соответствующем разделе меню и пройти в любое время. Список упражнений будет пополняться по мере взаимодействия с приложением.",
-    number: "/src/public/images/works/3.svg",
+    number: "/images/works/3.svg",
     location_number: "right-0",
   },
 };
@@ -89,11 +89,11 @@ const DetailedCard = (props) => {
         <span className="text-lg leading-[22px] tracking-[0.7px]">
           {cards.text2()}
         </span>
-        <img src={`/src/public/images/works/${cards.border}`} alt="#" />
+        <img src={`/images/works/${cards.border}`} alt="#" />
         <span className="text-[28px] leading-[38px] tracking-[0.7px]">
           {cards.text3}
         </span>
-        <img src={`/src/public/images/works/${cards.border}`} alt="#" />
+        <img src={`/images/works/${cards.border}`} alt="#" />
       </div>
       <div className="mira-detailed-card-end"></div>
     </div>

@@ -1,7 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
 

@@ -10,7 +10,7 @@ export default {
         black: "#2D2D2D",
       },
       backgroundImage: {
-        hero: "url('/src/public/images/HeroBG.png')",
+        hero: "url('/images/HeroBG.png')",
       },
       boxShadow: {
         hero: "0px 0px 11.221px 0px rgba(0, 0, 0, 0.12)",
