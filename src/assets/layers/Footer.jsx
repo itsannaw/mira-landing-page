@@ -7,7 +7,10 @@ const Footer = () => {
             Приложение создано при поддержке
           </span>
           <a href="https://pnpl.site" target="_blank" rel="noreferrer">
-            <img src="/src/assets/images/footer/Pineapple.svg" alt="Pineapple Practice" />
+            <img
+              src="/src/public/images/footer/Pineapple.svg"
+              alt="Pineapple Practice"
+            />
           </a>
         </div>
         <div className="flex flex-col items-end gap-2">
@@ -17,10 +20,7 @@ const Footer = () => {
           </div>
           <div>
             <a href="https://t.me/L_Tyler" target="_blank" rel="noreferrer">
-              <img
-                src="src/assets/images/footer/Telegram.svg"
-                alt="telegram"
-              />
+              <img src="src/public/images/footer/Telegram.svg" alt="telegram" />
             </a>
           </div>
         </div>

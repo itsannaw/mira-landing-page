@@ -4,7 +4,7 @@ const SearchList = (props) => {
       <div className="flex justify-center items-center w-[56px] h-[56px] bg-light_orange rounded-full">
         <img
           className="w-9 h-9"
-          src="/src/assets/images/works/Plus.svg"
+          src="/src/public/images/works/Plus.svg"
           alt="plus"
         />
       </div>

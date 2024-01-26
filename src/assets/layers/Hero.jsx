@@ -36,7 +36,7 @@ const Hero = () => {
               <div className="relative">
                 <img
                   className="absolute w-[86px] h-[58px] left-[-90px] top-4"
-                  src="/src/assets/images/vectors/VectorHero.png"
+                  src="/src/public/images/vectors/VectorHero.png"
                   alt="#"
                 />
               </div>
@@ -44,12 +44,12 @@ const Hero = () => {
             <div className="flex absolute top-[-90px] right-[80px]">
               <img
                 className="h-[545px] w-[335px]"
-                src="/src/assets/images/Rectangle.png"
+                src="/src/public/images/Rectangle.png"
                 alt=""
               />
             </div>
             <div className="flex flex-col items-end absolute top-[350px] right-[60px] gap-2">
-              <img src="/src/assets/images/QR.jpg" alt="#" />
+              <img src="/src/public/images/QR.jpg" alt="#" />
               <span className="flex text-sm text-end">
                 Скачать приложение <br /> на смартфон
               </span>
@@ -63,7 +63,7 @@ const Hero = () => {
             </Button>
             <img
               className="absolute w-16 h-10 buttom-[0px] right-[-15px] top-5"
-              src="/src/assets/images/vectors/VectorButton.png"
+              src="/src/public/images/vectors/VectorButton.png"
               alt="#"
             />
           </div>

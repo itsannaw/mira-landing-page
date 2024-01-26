@@ -3,7 +3,7 @@ import { TEAM } from "../const";
 
 const TEAM_MAPPER = {
   [TEAM.ANDROID]: {
-    src: "/src/assets/images/team/random.png",
+    src: "/src/public/images/team/random.png",
     alt: "img",
     first_name: "Имя",
     last_name: "Фамилия",
@@ -28,7 +28,7 @@ const PositionsTeam = (props) => {
         </div>
         <span className="text-sm leading-[18px]">{team.position}</span>
       </div>
-      <img src="/src/assets/images/team/vector.png" alt="vector" />
+      <img src="/src/public/images/team/vector.png" alt="vector" />
     </div>
   );
 };
