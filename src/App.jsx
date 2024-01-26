@@ -8,14 +8,14 @@ import Team from "./assets/layers/Team";
 
 function App() {
   return (
-    <>
+    <div className="max-w-[1440px] relative mx-auto">
       <Header />
       <Hero />
       <About />
       <HowItWorks />
       <Team />
       <Footer />
-    </>
+    </div>
   );
 }
 

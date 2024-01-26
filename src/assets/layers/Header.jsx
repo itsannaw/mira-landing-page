@@ -29,8 +29,8 @@ const Header = () => {
   ));
 
   return (
-    <section>
-      <div className="flex fixed w-[calc(100%-120px)] bg-white z-20 left-[60px] top-0 justify-between items-center py-6 border-b-2 border-[#CFD0DA]">
+    <section className="max-w-[1440px] mx-auto">
+      <div className="flex fixed w-[calc(min(100%,1440px)-120px)] bg-white z-20 left-[10px] lg:left-[calc(50%-660px)] top-0 justify-between items-center py-3 border-b-2 border-[#CFD0DA]">
         <div>
           <a href="">
             <img src="/src/assets/images/Logo.svg" alt="#" />
