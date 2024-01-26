@@ -41,7 +41,7 @@ const Hero = () => {
                 />
               </div>
             </div>
-            <div className="flex absolute top-[-90px] right-[120px]">
+            <div className="flex absolute top-[-90px] right-[80px]">
               <img
                 className="h-[545px] w-[335px]"
                 src="/src/assets/images/Rectangle.png"

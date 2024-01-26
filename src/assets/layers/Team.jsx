@@ -8,7 +8,7 @@ import { BUTTON_TYPES, TEAM } from "../../const";
 
 const Team = () => {
   return (
-    <section className="flex relative mt-[120px] justify-center flex-col">
+    <section className="flex relative mt-[200px] justify-center flex-col">
       <div className="flex">
         <div id="team" className="absolute left-0">
           <Hashtag>

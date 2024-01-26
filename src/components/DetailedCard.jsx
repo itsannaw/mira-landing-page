@@ -5,9 +5,10 @@ const CARDS_MAPPER = {
   [HOW_IT_WORKS_CARDS.PLUS]: {
     bg_color: "bg-dark_violet",
     text_color: "text-white",
-    size_phone: "w-[457px] h-[523px] left-[165px]",
+    size_phone: "w-[457px] h-[523px] left-[132px]",
     phone: "/src/assets/images/works/Mockups1.png",
     alt: "phone_plus",
+    border: "border_light.png",
     text1: "Как вести записи",
     text2: () => (
       <span>
@@ -27,9 +28,10 @@ const CARDS_MAPPER = {
   [HOW_IT_WORKS_CARDS.CHART]: {
     bg_color: "bg-[#EFECFC]",
     text_color: "text-black",
-    size_phone: "w-[500px] h-[585px] left-[120px]",
+    size_phone: "w-[500px] h-[585px] left-[69px]",
     phone: "/src/assets/images/works/Mockups2.png",
     alt: "phone_chart",
+    border: "border_dark.png",
     text1: "Как разобраться в статистике",
     text2: () =>
       "Мира составляет статистику очень простым и понятным способом. Она формируется на основе обстоятельств (факторов), которые на протяжении жизни влияют на эмоции.",
@@ -41,9 +43,10 @@ const CARDS_MAPPER = {
   [HOW_IT_WORKS_CARDS.PRAXIS]: {
     bg_color: "bg-violet",
     text_color: "text-white",
-    size_phone: "w-[565px] h-[595px] left-[60px] bottom-[-5px]",
+    size_phone: "w-[565px] h-[595px] left-[9px] bottom-[-5px]",
     phone: "/src/assets/images/works/Mockups3.png",
     alt: "phone_praxis",
+    border: "border_light.png",
     text1: "Как проходить упражнения",
     text2: () =>
       "Мира разработана таким образом, что она сама предлагает упражнение, которое подходит под ситуацию. В конце чек-ина она подбирает технику, основываясь на информации записи.",
@@ -86,11 +89,11 @@ const DetailedCard = (props) => {
         <span className="text-lg leading-[22px] tracking-[0.7px]">
           {cards.text2()}
         </span>
-        <img src="/src/assets/images/works/border.png" alt="#" />
+        <img src={`/src/assets/images/works/${cards.border}`} alt="#" />
         <span className="text-[28px] leading-[38px] tracking-[0.7px]">
           {cards.text3}
         </span>
-        <img src="/src/assets/images/works/border.png" alt="#" />
+        <img src={`/src/assets/images/works/${cards.border}`} alt="#" />
       </div>
       <div className="mira-detailed-card-end"></div>
     </div>
