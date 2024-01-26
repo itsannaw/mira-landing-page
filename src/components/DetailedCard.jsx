@@ -3,6 +3,7 @@ import { HOW_IT_WORKS_CARDS } from "../const";
 
 const CARDS_MAPPER = {
   [HOW_IT_WORKS_CARDS.PLUS]: {
+    id: "card1",
     bg_color: "bg-dark_violet",
     text_color: "text-white",
     size_phone: "w-[457px] h-[523px] left-[132px]",
@@ -26,6 +27,7 @@ const CARDS_MAPPER = {
     location_number: "right-20",
   },
   [HOW_IT_WORKS_CARDS.CHART]: {
+    id: "card2",
     bg_color: "bg-[#EFECFC]",
     text_color: "text-black",
     size_phone: "w-[500px] h-[585px] left-[69px]",
@@ -41,6 +43,7 @@ const CARDS_MAPPER = {
     location_number: "right-0 bottom-[0.5px]",
   },
   [HOW_IT_WORKS_CARDS.PRAXIS]: {
+    id: "card3",
     bg_color: "bg-violet",
     text_color: "text-white",
     size_phone: "w-[565px] h-[595px] left-[9px] bottom-[-5px]",
@@ -63,39 +66,40 @@ const DetailedCard = (props) => {
   }, [props.type]);
 
   return (
-    <div
-      className={`mira-detailed-card flex relative overflow-hidden w-full h-[625px] pt-10  ${cards.bg_color} rounded-[20px] z-10`}
-    >
-      <div>
+    <div className="card" id={cards.id}>
+      <div
+        className={`relative overflow-hidden w-full h-[625px] pt-10  ${cards.bg_color} rounded-[20px] z-10 duration-500`}
+      >
+        <div>
+          <img
+            className={`absolute  ${cards.size_phone}`}
+            src={cards.phone}
+            alt="#"
+          />
+        </div>
         <img
-          className={`absolute  ${cards.size_phone}`}
-          src={cards.phone}
+          className={`absolute ${cards.location_number}`}
+          src={cards.number}
           alt="#"
         />
-      </div>
-      <img
-        className={`absolute ${cards.location_number}`}
-        src={cards.number}
-        alt="#"
-      />
 
-      <div
-        className={`flex flex-col relative left-[calc(50%-10px)] gap-5 max-w-[480px] w-full ${cards.text_color}`}
-      >
-        <span className="text-[40px] leading-[44px] tracking-[0.5px]">
-          {cards.text1}
-        </span>
+        <div
+          className={`flex flex-col relative left-[calc(50%-10px)] gap-5 max-w-[480px] w-full ${cards.text_color}`}
+        >
+          <span className="text-[40px] leading-[44px] tracking-[0.5px]">
+            {cards.text1}
+          </span>
 
-        <span className="text-lg leading-[22px] tracking-[0.7px]">
-          {cards.text2()}
-        </span>
-        <img src={`/images/works/${cards.border}`} alt="#" />
-        <span className="text-[28px] leading-[38px] tracking-[0.7px]">
-          {cards.text3}
-        </span>
-        <img src={`/images/works/${cards.border}`} alt="#" />
+          <span className="text-lg leading-[22px] tracking-[0.7px]">
+            {cards.text2()}
+          </span>
+          <img src={`/images/works/${cards.border}`} alt="#" />
+          <span className="text-[28px] leading-[38px] tracking-[0.7px]">
+            {cards.text3}
+          </span>
+          <img src={`/images/works/${cards.border}`} alt="#" />
+        </div>
       </div>
-      <div className="mira-detailed-card-end"></div>
     </div>
   );
 };

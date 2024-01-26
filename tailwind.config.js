@@ -16,6 +16,9 @@ export default {
         hero: "0px 0px 11.221px 0px rgba(0, 0, 0, 0.12)",
         card: "3px 3px 5px 0px rgba(160, 150, 180, 0.15)",
       },
+      transitionDuration: {
+        500: "0.5s",
+      },
     },
   },
   plugins: [],

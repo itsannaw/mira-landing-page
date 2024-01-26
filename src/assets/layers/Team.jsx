@@ -8,7 +8,7 @@ import { BUTTON_TYPES, TEAM } from "../../const";
 
 const Team = () => {
   return (
-    <section className="flex relative mt-[200px] justify-center flex-col">
+    <section className="flex relative mt-[175px] justify-center flex-col">
       <div className="flex">
         <div id="team" className="absolute left-0">
           <Hashtag>
@@ -18,10 +18,7 @@ const Team = () => {
       </div>
       <div className="flex relative justify-center gap-[60px]">
         <div className="items-start mt-[120px] w-[400px]">
-          <Swiper
-            modules={[Pagination]}
-            pagination={{ clickable: true }}
-          >
+          <Swiper modules={[Pagination]} pagination={{ clickable: true }}>
             <SwiperSlide>
               <div className="flex flex-col items-start gap-[14px] mb-12">
                 <PositionsTeam type={TEAM.ANDROID} />

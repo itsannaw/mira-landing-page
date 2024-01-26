@@ -1,7 +1,6 @@
 import Card from "../../components/Card";
 import DetailedCard from "../../components/DetailedCard";
 import Hashtag from "../../components/Hashtag";
-import OverlapWrapper from "../../components/OverlapWrapper";
 import { HOW_IT_WORKS_CARDS } from "../../const";
 
 const HowItWorks = () => {
@@ -37,15 +36,11 @@ const HowItWorks = () => {
           короткое время и имеют доказанную эффективность.
         </Card>
       </div>
-      <OverlapWrapper
-        className="flex flex-col gap-5"
-        itemClass=".mira-detailed-card"
-        endItemClass=".mira-detailed-card-end"
-      >
-        <DetailedCard type={HOW_IT_WORKS_CARDS.PLUS}></DetailedCard>
-        <DetailedCard type={HOW_IT_WORKS_CARDS.CHART}></DetailedCard>
-        <DetailedCard type={HOW_IT_WORKS_CARDS.PRAXIS}></DetailedCard>
-      </OverlapWrapper>
+        <div className="flex flex-col gap-5" id="cards">
+          <DetailedCard type={HOW_IT_WORKS_CARDS.PLUS}></DetailedCard>
+          <DetailedCard type={HOW_IT_WORKS_CARDS.CHART}></DetailedCard>
+          <DetailedCard type={HOW_IT_WORKS_CARDS.PRAXIS}></DetailedCard>
+        </div>
     </section>
   );
 };

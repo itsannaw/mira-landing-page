@@ -40,11 +40,11 @@ const Card = (props) => {
         </div>
       </div>
       <div className="flex flex-col  justify-between gap-5 h-[195px]">
-        <img src="/images/works/border.png" alt="" />
+        <img src="/images/works/border_dark.png" alt="" />
         <span className="h-[150px] text-base leading-[22px] tracking-[0.1px]">
           {props.children}
         </span>
-        <img src="/images/works/border.png" alt="" />
+        <img src="/images/works/border_dark.png" alt="" />
       </div>
       <span className="flex justify-center text-[200px] text-violet font-medium leading-[170px] opacity-50">
         {cards.number}

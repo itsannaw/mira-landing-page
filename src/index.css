@@ -6,6 +6,8 @@
   --swiper-theme-color: #6E78D1;
   --swiper-pagination-bullet-inactive-color: #fff;
   --swiper-pagination-bullet-horizontal-gap: 8px;
+  --cardTopPadding: 1.5em;
+  --cardMargin: 4vw;
 }
 
 body {
@@ -23,6 +25,8 @@ body {
 section {
   margin: 0 60px;
 }
+
+/* swiper  */
 
 .swiper {
   width: 100%;
@@ -51,4 +55,31 @@ section {
   border-color: #6E78D1;
   border-width: 1.5px;
   margin-right: 16px;
+}
+
+/* stack cards */
+
+#cards {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 625px);
+}
+
+#card1 {
+  --index: 0;
+}
+
+#card2 {
+  --index: 1;
+}
+
+#card3 {
+  --index: 2;
+}
+
+.card {
+  position: sticky;
+  padding-top: calc((var(--index) * 30px));
+  top: 91px;
 }
