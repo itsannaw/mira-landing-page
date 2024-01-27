@@ -30,7 +30,7 @@ const Header = () => {
 
   return (
     <section className="max-w-[1440px] mx-auto w-full">
-      <div className="mira-header-before flex flex-col lg:flex-row fixed w-[calc(min(100%,1440px)-30px)] lg:w-[calc(min(100%,1440px)-80px)] bg-white z-20 left-[calc(50%-min(660px,calc((100%/2)-15px)))] lg:left-[calc(50%-min(660px,calc((100%/2)-40px)))] top-0 justify-between items-center py-3 border-b-2 border-[#CFD0DA]">
+      <div className="mira-header-before flex flex-col lg:flex-row fixed w-[calc(min(100%,1440px)-30px)] lg:w-[calc(min(100%,1440px)-80px)] bg-white z-20 left-[calc(50%-min(660px,calc((100%/2)-15px)))] lg:left-[calc(50%-min(680px,calc((100%/2)-40px)))] top-0 justify-between items-center py-3 border-b-2 border-[#CFD0DA]">
         <div className="flex justify-between w-full z-10">
           <div className="w-[114px] h-[52px] lg:w-[131px] lg:h-[60px]">
             <a href="">

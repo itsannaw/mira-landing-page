@@ -5,15 +5,18 @@ import { HOW_IT_WORKS_CARDS } from "../../const";
 
 const HowItWorks = () => {
   return (
-    <section id="works" className="flex relative mt-[120px] flex-col gap-10">
+    <section
+      id="works"
+      className="flex relative mt-[40px] lg:mt-[120px] flex-col gap-5 lg:gap-10"
+    >
       <div className="lg:absolute">
         <Hashtag># Фичи и контент</Hashtag>
       </div>
-      <div className="flex lg:absolute lg:max-w-[479px] left-[50%] flex-col gap-[25px]">
-        <span className=" text-black text-[40px] leading-[44px] tracking-[0.5px]">
+      <div className="flex lg:absolute lg:max-w-[479px] left-[50%] flex-col text-center lg:text-start gap-[25px]">
+        <span className=" text-black lg:text-[40px] text-2xl leading-[30px] lg:leading-[44px] tracking-[0.5px]">
           Как работает приложение?
         </span>
-        <span className="text-black text-lg leading-[22px] tracking-[0.7px]">
+        <span className="text-black text-sm leading-[18px] font-medium lg:text-lg lg:leading-[22px] lg:tracking-[0.7px]">
           При создании Миры команда разработки опиралась на 3 главных «кита»,
           которые делают приложение таким полезным
         </span>

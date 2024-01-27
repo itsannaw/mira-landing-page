@@ -4,11 +4,14 @@ import { TEXT_ABOUT_TYPES } from "../../const";
 
 const About = () => {
   return (
-    <section id="about" className="flex relative mt-[120px] flex-col gap-10">
+    <section
+      id="about"
+      className="flex relative mt-[40px] lg:mt-[120px] flex-col gap-6 lg:gap-10"
+    >
       <div className="lg:absolute">
         <Hashtag># О приложении</Hashtag>
       </div>
-      <div className="lg:max-w-[479px] text-center lg:text-left lg:absolute left-[50%] text-black text-[40px] leading-[44px] tracking-[0.5px]">
+      <div className="lg:max-w-[479px] text-center lg:text-left lg:absolute left-[50%] text-black lg:text-[40px] text-2xl leading-[30px] lg:leading-[44px] tracking-[0.5px]">
         Зачем было создано это приложение?
       </div>
       <div className="flex flex-wrap justify-center gap-x-[60px] gap-y-[40px] lg:mt-[128px]">

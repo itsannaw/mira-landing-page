@@ -4,24 +4,28 @@ import { TEXT_ABOUT_TYPES } from "../const";
 const IMAGES_MAPPER = {
   [TEXT_ABOUT_TYPES.SMILE]: (
     <img
-      className="w-[100px] h-[100px]"
+      className="w-[60px] h-[60px] lg:w-[100px] lg:h-[100px]"
       src="/images/about/Smile.png"
       alt="#"
     />
   ),
   [TEXT_ABOUT_TYPES.LIKE]: (
-    <img className="w-[100px] h-[100px]" src="/images/about/Like.png" alt="#" />
+    <img
+      className="w-[60px] h-[60px] lg:w-[100px] lg:h-[100px]"
+      src="/images/about/Like.png"
+      alt="#"
+    />
   ),
   [TEXT_ABOUT_TYPES.DIALOGUE]: (
     <img
-      className="w-[100px] h-[100px]"
+      className="w-[60px] h-[60px] lg:w-[100px] lg:h-[100px]"
       src="/images/about/Dialogue.png"
       alt="#"
     />
   ),
   [TEXT_ABOUT_TYPES.CHECK]: (
     <img
-      className="w-[100px] h-[100px]"
+      className="w-[60px] h-[60px] lg:w-[100px] lg:h-[100px]"
       src="/images/about/Check.png"
       alt="#"
     />
@@ -37,7 +41,7 @@ const TextAboutApp = (props) => {
       className={`text-center lg:text-left flex flex-col ${props.className}`}
     >
       <div className="flex justify-center lg:justify-start">{image}</div>
-      <span className="text-black text-lg leading-[22px] tracking-[0.7px]">
+      <span className="text-black text-sm leading-[18px] font-medium lg:text-lg lg:leading-[22px] lg:tracking-[0.7px]">
         {props.children}
       </span>
     </div>
