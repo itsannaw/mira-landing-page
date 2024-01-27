@@ -6,8 +6,10 @@ const CARDS_MAPPER = {
     id: "card1",
     bg_color: "bg-dark_violet",
     text_color: "text-white",
-    size_phone: "w-[457px] h-[523px] left-[132px]",
+    size_phone:
+      "w-[457px] h-[523px] max-xl:w-[380px] max-xl:h-[342px] max-xl:left-[70px] left-[132px] max-xl:top-[80px]",
     phone: "/images/works/Mockups1.png",
+    small_phone: "/images/works/Mockups1m.png",
     alt: "phone_plus",
     border: "border_light.png",
     text1: "Как вести записи",
@@ -30,8 +32,10 @@ const CARDS_MAPPER = {
     id: "card2",
     bg_color: "bg-[#EFECFC]",
     text_color: "text-black",
-    size_phone: "w-[500px] h-[585px] left-[69px]",
+    size_phone:
+      "max-xl:w-[400px] max-xl:h-[351px] max-xl:bottom-[100px] w-[500px] h-[585px] left-[69px]",
     phone: "/images/works/Mockups2.png",
+    small_phone: "/images/works/Mockups2m.png",
     alt: "phone_chart",
     border: "border_dark.png",
     text1: "Как разобраться в статистике",
@@ -46,8 +50,10 @@ const CARDS_MAPPER = {
     id: "card3",
     bg_color: "bg-violet",
     text_color: "text-white",
-    size_phone: "w-[565px] h-[595px] left-[9px] bottom-[-5px]",
+    size_phone:
+      "max-xl:w-[420px] max-xl:h-[420px] max-xl:bottom-[50px] max-xl:left-[40px] w-[565px] h-[595px] left-[9px] bottom-[-5px] ",
     phone: "/images/works/Mockups3.png",
+    small_phone: "/images/works/Mockups3m.png",
     alt: "phone_praxis",
     border: "border_light.png",
     text1: "Как проходить упражнения",
@@ -68,13 +74,18 @@ const DetailedCard = (props) => {
   return (
     <div className="card" id={cards.id}>
       <div
-        className={`relative overflow-hidden w-full h-[625px] pt-10  ${cards.bg_color} rounded-[20px] z-10 duration-500`}
+        className={`relative overflow-hidden w-full h-[625px] max-xl:h-[520px] pt-10  ${cards.bg_color} rounded-[20px] z-10 duration-500`}
       >
         <div>
           <img
-            className={`absolute  ${cards.size_phone}`}
+            className={`absolute max-xl:hidden ${cards.size_phone}`}
             src={cards.phone}
             alt="#"
+          />
+          <img
+            className={`absolute xl:hidden ${cards.size_phone}`}
+            src={cards.small_phone}
+            alt="phone"
           />
         </div>
         <img
@@ -84,17 +95,17 @@ const DetailedCard = (props) => {
         />
 
         <div
-          className={`flex flex-col relative left-[calc(50%-10px)] gap-5 max-w-[480px] w-full ${cards.text_color}`}
+          className={`flex flex-col relative left-[calc(50%-10px)] gap-5 max-w-[480px] max-xl:max-w-[420px] w-full ${cards.text_color}`}
         >
-          <span className="text-[40px] leading-[44px] tracking-[0.5px]">
+          <span className="text-[40px] max-xl:text-3xl leading-[44px] tracking-[0.5px]">
             {cards.text1}
           </span>
 
-          <span className="text-lg leading-[22px] tracking-[0.7px]">
+          <span className="max-xl:text-base text-lg leading-[22px] tracking-[0.7px]">
             {cards.text2()}
           </span>
           <img src={`/images/works/${cards.border}`} alt="#" />
-          <span className="text-[28px] leading-[38px] tracking-[0.7px]">
+          <span className="max-xl:text-xl text-[28px] leading-[38px] tracking-[0.7px]">
             {cards.text3}
           </span>
           <img src={`/images/works/${cards.border}`} alt="#" />

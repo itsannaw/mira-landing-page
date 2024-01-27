@@ -6,7 +6,7 @@ import { HOW_IT_WORKS_CARDS } from "../../const";
 const HowItWorks = () => {
   return (
     <section id="works" className="flex relative mt-[120px] flex-col gap-10">
-      <div className="absolute left-0">
+      <div className="absolute left-[20px]">
         <Hashtag># Фичи и контент</Hashtag>
       </div>
       <div className="flex absolute left-[calc(50%)]  flex-col max-w-[480px] gap-[25px]">
@@ -18,7 +18,7 @@ const HowItWorks = () => {
           которые делают приложение таким полезным
         </span>
       </div>
-      <div className="flex justify-between mt-[220px]">
+      <div className="flex max-xl:flex-wrap max-xl:justify-center justify-between gap-4  mt-[220px]">
         <Card type={HOW_IT_WORKS_CARDS.PLUS}>
           Вы фиксируете эмоции и мысли, которые с ними связаны, в любое удобное
           для вас время. «Мира» запоминает эти данные и бережно хранит их на
@@ -36,11 +36,11 @@ const HowItWorks = () => {
           короткое время и имеют доказанную эффективность.
         </Card>
       </div>
-        <div className="flex flex-col gap-5" id="cards">
-          <DetailedCard type={HOW_IT_WORKS_CARDS.PLUS}></DetailedCard>
-          <DetailedCard type={HOW_IT_WORKS_CARDS.CHART}></DetailedCard>
-          <DetailedCard type={HOW_IT_WORKS_CARDS.PRAXIS}></DetailedCard>
-        </div>
+      <div className="flex flex-col gap-5" id="cards">
+        <DetailedCard type={HOW_IT_WORKS_CARDS.PLUS}></DetailedCard>
+        <DetailedCard type={HOW_IT_WORKS_CARDS.CHART}></DetailedCard>
+        <DetailedCard type={HOW_IT_WORKS_CARDS.PRAXIS}></DetailedCard>
+      </div>
     </section>
   );
 };

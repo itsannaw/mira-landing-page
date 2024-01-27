@@ -28,10 +28,10 @@ const Card = (props) => {
   }, [props.type]);
 
   return (
-    <div className="flex flex-col gap-5 bg-[#F6F5F8] rounded-[20px] max-w-[427px] py-8 px-9 shadow-card">
+    <div className="flex flex-col gap-5 bg-[#F6F5F8] rounded-[20px] max-w-[427px] w-full py-8 px-9 shadow-card">
       <div className="flex gap-3">
         <button className="flex justify-center items-center max-w-[287px] w-full text-white bg-violet rounded-3xl py-[10px] px-3 border-2 border-[#CFD0DA] cursor-default">
-          <span className="text-lg leading-[22px] tracking-[0.7px]">
+          <span className="lg:text-base xl:text-lg leading-[22px] tracking-[0.7px]">
             {cards.button_text}
           </span>
         </button>
@@ -46,7 +46,7 @@ const Card = (props) => {
         </span>
         <img src="/images/works/border_dark.png" alt="" />
       </div>
-      <span className="flex justify-center text-[200px] text-violet font-medium leading-[170px] opacity-50">
+      <span className="flex justify-center lg:text-[180px] xl:text-[200px] text-violet font-medium leading-[170px] opacity-50">
         {cards.number}
       </span>
     </div>

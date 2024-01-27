@@ -23,7 +23,13 @@ body {
 }
 
 section {
-  margin: 0 60px;
+  padding: 0 15 px;
+}
+
+@media screen and (min-width: 1024px) {
+  section {
+    margin: 0 40px;
+  }
 }
 
 /* swiper  */
@@ -82,4 +88,16 @@ section {
   position: sticky;
   padding-top: calc((var(--index) * 30px));
   top: 91px;
+}
+
+.mira-header-before::before {
+  content: '';
+  display: block;
+  width: calc(100% + 40px);
+  height: 100%;
+  position: absolute;
+  left: -20px;
+  top: 0;
+  z-index: 1;
+  background-color: white;
 }
