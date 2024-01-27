@@ -29,12 +29,14 @@ const IMAGES_MAPPER = {
 };
 
 const TextAboutApp = (props) => {
-  const images = useMemo(() => {
+  const image = useMemo(() => {
     return IMAGES_MAPPER[props.type];
   }, [props.type]);
   return (
-    <div className="flex flex-col">
-      {images}
+    <div
+      className={`text-center lg:text-left flex flex-col ${props.className}`}
+    >
+      <div className="flex justify-center lg:justify-start">{image}</div>
       <span className="text-black text-lg leading-[22px] tracking-[0.7px]">
         {props.children}
       </span>

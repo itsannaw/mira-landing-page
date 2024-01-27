@@ -23,13 +23,7 @@ body {
 }
 
 section {
-  padding: 0 15 px;
-}
-
-@media screen and (min-width: 1024px) {
-  section {
-    margin: 0 40px;
-  }
+  padding: 0 15px;
 }
 
 /* swiper  */
@@ -69,7 +63,7 @@ section {
   list-style: none;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(3, 625px);
+  grid-template-rows: repeat(3, 750px);
 }
 
 #card1 {
@@ -100,4 +94,17 @@ section {
   top: 0;
   z-index: 1;
   background-color: white;
+}
+
+/* MEDIA */
+
+@media screen and (min-width: 1024px) {
+  section {
+    padding: 0;
+    margin: 0 40px;
+  }
+
+  .card {
+    grid-template-rows: repeat(3, 625px);
+  }
 }

@@ -46,7 +46,7 @@ const Card = (props) => {
         </span>
         <img src="/images/works/border_dark.png" alt="" />
       </div>
-      <span className="flex justify-center lg:text-[180px] xl:text-[200px] text-violet font-medium leading-[170px] opacity-50">
+      <span className="flex justify-center text-[180px] xl:text-[200px] text-violet font-medium leading-[170px] opacity-50">
         {cards.number}
       </span>
     </div>

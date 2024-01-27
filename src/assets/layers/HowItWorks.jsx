@@ -6,19 +6,19 @@ import { HOW_IT_WORKS_CARDS } from "../../const";
 const HowItWorks = () => {
   return (
     <section id="works" className="flex relative mt-[120px] flex-col gap-10">
-      <div className="absolute left-[20px]">
+      <div className="lg:absolute">
         <Hashtag># Фичи и контент</Hashtag>
       </div>
-      <div className="flex absolute left-[calc(50%)]  flex-col max-w-[480px] gap-[25px]">
+      <div className="flex lg:absolute lg:max-w-[479px] left-[50%] flex-col gap-[25px]">
         <span className=" text-black text-[40px] leading-[44px] tracking-[0.5px]">
-          Как работает <br /> приложение?
+          Как работает приложение?
         </span>
         <span className="text-black text-lg leading-[22px] tracking-[0.7px]">
           При создании Миры команда разработки опиралась на 3 главных «кита»,
           которые делают приложение таким полезным
         </span>
       </div>
-      <div className="flex max-xl:flex-wrap max-xl:justify-center justify-between gap-4  mt-[220px]">
+      <div className="flex max-xl:flex-wrap max-xl:justify-center justify-between gap-4  lg:mt-[220px]">
         <Card type={HOW_IT_WORKS_CARDS.PLUS}>
           Вы фиксируете эмоции и мысли, которые с ними связаны, в любое удобное
           для вас время. «Мира» запоминает эти данные и бережно хранит их на

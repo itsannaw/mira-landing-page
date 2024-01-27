@@ -26,7 +26,7 @@ const CARDS_MAPPER = {
     text3:
       "Записи хранятся на главной странице приложения, их можно открывать, редактировать, удалять и отправлять своему специалисту.",
     number: "/images/works/1.svg",
-    location_number: "right-20",
+    location_number: "right-0 lg:right-20",
   },
   [HOW_IT_WORKS_CARDS.CHART]: {
     id: "card2",
@@ -67,48 +67,46 @@ const CARDS_MAPPER = {
 };
 
 const DetailedCard = (props) => {
-  const cards = useMemo(() => {
+  const card = useMemo(() => {
     return CARDS_MAPPER[props.type];
   }, [props.type]);
 
   return (
-    <div className="card" id={cards.id}>
+    <div className="card" id={card.id}>
       <div
-        className={`relative overflow-hidden w-full h-[625px] max-xl:h-[520px] pt-10  ${cards.bg_color} rounded-[20px] z-10 duration-500`}
+        className={`relative overflow-hidden w-full lg:h-[625px] p-[20px] lg:pt-10  ${card.bg_color} rounded-[20px] z-10 duration-500`}
       >
-        <div>
-          <img
-            className={`absolute max-xl:hidden ${cards.size_phone}`}
-            src={cards.phone}
-            alt="#"
-          />
-          <img
-            className={`absolute xl:hidden ${cards.size_phone}`}
-            src={cards.small_phone}
-            alt="phone"
-          />
-        </div>
         <img
-          className={`absolute ${cards.location_number}`}
-          src={cards.number}
-          alt="#"
+          className={`absolute max-xl:hidden ${card.size_phone}`}
+          src={card.phone}
+          alt="phone"
+        />
+        <img
+          className={`absolute ${card.location_number} max-lg:w-[116px] max-lg:h-[300px]`}
+          src={card.number}
+          alt="card-number"
         />
 
         <div
-          className={`flex flex-col relative left-[calc(50%-10px)] gap-5 max-w-[480px] max-xl:max-w-[420px] w-full ${cards.text_color}`}
+          className={`flex flex-col relative lg:left-[calc(50%-10px)] gap-5 lg:max-w-[480px] w-full ${card.text_color}`}
         >
           <span className="text-[40px] max-xl:text-3xl leading-[44px] tracking-[0.5px]">
-            {cards.text1}
+            {card.text1}
           </span>
 
           <span className="max-xl:text-base text-lg leading-[22px] tracking-[0.7px]">
-            {cards.text2()}
+            {card.text2()}
           </span>
-          <img src={`/images/works/${cards.border}`} alt="#" />
+          <img src={`/images/works/${card.border}`} alt="#" />
           <span className="max-xl:text-xl text-[28px] leading-[38px] tracking-[0.7px]">
-            {cards.text3}
+            {card.text3}
           </span>
-          <img src={`/images/works/${cards.border}`} alt="#" />
+          <img src={`/images/works/${card.border}`} alt="#" />
+          <img
+            className={`xl:hidden ${card.size_phone}`}
+            src={card.small_phone}
+            alt="phone"
+          />
         </div>
       </div>
     </div>
