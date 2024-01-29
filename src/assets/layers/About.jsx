@@ -16,21 +16,21 @@ const About = () => {
       </div>
       <div className="flex flex-wrap justify-center gap-x-[60px] gap-y-[40px] lg:mt-[128px]">
         <TextAboutApp
-          className="w-full lg:max-w-[397px]"
+          className="w-full sm:max-w-[397px]"
           type={TEXT_ABOUT_TYPES.SMILE}
         >
           На протяжении жизни мы все испытываем самые разные эмоции и не всегда
           замечаем, какие обстоятельства на самом деле их вызывают.
         </TextAboutApp>
         <TextAboutApp
-          className="w-full lg:max-w-[479px]"
+          className="w-full sm:max-w-[479px]"
           type={TEXT_ABOUT_TYPES.CHECK}
         >
           Чтобы лучше разобраться в себе, в своих чувствах и мыслях, научиться
           жить в гармонии с собой и другими, было создано приложение «Мира».
         </TextAboutApp>
         <TextAboutApp
-          className="w-full lg:max-w-[397px]"
+          className="w-full sm:max-w-[397px]"
           type={TEXT_ABOUT_TYPES.DIALOGUE}
         >
           Для того чтобы было легче «общаться» с приложением, мы придумали
@@ -40,7 +40,7 @@ const About = () => {
           справиться с эмоциями.
         </TextAboutApp>
         <TextAboutApp
-          className="w-full lg:max-w-[479px]"
+          className="w-full sm:max-w-[479px]"
           type={TEXT_ABOUT_TYPES.LIKE}
         >
           Мира не просто играет роль спутника, но и является другом, с которым

@@ -8,7 +8,7 @@ import { BUTTON_TYPES, TEAM } from "../../const";
 
 const Team = () => {
   return (
-    <section className="flex relative mt-[175px] justify-center flex-col">
+    <section className="flex relative mt-[70px] justify-center flex-col">
       <div className="flex">
         <div id="team" className="lg:absolute left-0">
           <Hashtag>
@@ -84,7 +84,7 @@ const Team = () => {
               кнопке ниже.
             </div>
           </div>
-          <div className="hidden lg:block">
+          <div className="hidden lg:flex lg:flex-col gap-5">
             <span className="font-bold">Мы ищем:</span>
             <div className="flex flex-col gap-2">
               <SearchList>iOS-разработчиков</SearchList>

@@ -28,20 +28,24 @@ const Card = (props) => {
   }, [props.type]);
 
   return (
-    <div className="flex flex-col gap-5 bg-[#F6F5F8] rounded-[20px] max-w-[427px] w-full py-8 px-9 shadow-card">
-      <div className="flex gap-3">
-        <button className="flex justify-center items-center max-w-[287px] w-full text-white bg-violet rounded-3xl py-[10px] px-3 border-2 border-[#CFD0DA] cursor-default">
-          <span className="lg:text-base xl:text-lg leading-[22px] tracking-[0.7px]">
+    <div className="flex flex-col gap-[13px] lg:gap-5 bg-[#F6F5F8] rounded-[20px] max-w-[380px] lg:max-w-[427px] w-full py-5 px-[19px] md:py-8 md:px-9 shadow-card">
+      <div className="flex gap-3 justify-center max-md:items-center">
+        <button className="flex justify-center items-center max-w-[230px] md:max-w-[287px] w-full text-white bg-violet rounded-3xl py-[10px] px-3 border-2 border-[#CFD0DA] cursor-default">
+          <span className="text-[12px] md:text-sm lg:text-base xl:text-lg leading-[22px] tracking-[0.7px]">
             {cards.button_text}
           </span>
         </button>
-        <div className="flex justify-center items-center w-[56px] h-[56px] bg-light_orange rounded-full">
-          <img className="w-9 h-9" src={cards.src} alt={cards.alt} />
+        <div className="flex justify-center items-center w-10 h-10 lg:w-14 lg:h-14 bg-light_orange rounded-full">
+          <img
+            className="w-7 h-7 lg:w-9 lg:h-9"
+            src={cards.src}
+            alt={cards.alt}
+          />
         </div>
       </div>
-      <div className="flex flex-col  justify-between gap-5 h-[195px]">
+      <div className="flex flex-col  justify-between gap-5 md:h-[195px]">
         <img src="/images/works/border_dark.png" alt="" />
-        <span className="h-[150px] text-base leading-[22px] tracking-[0.1px]">
+        <span className="md:h-[150px] text-sm leading-[18px] font-medium lg:font-normal lg:text-base lg:leading-[22px] tracking-[0.1px]">
           {props.children}
         </span>
         <img src="/images/works/border_dark.png" alt="" />

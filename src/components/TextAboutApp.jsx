@@ -41,7 +41,7 @@ const TextAboutApp = (props) => {
       className={`text-center lg:text-left flex flex-col ${props.className}`}
     >
       <div className="flex justify-center lg:justify-start">{image}</div>
-      <span className="text-black text-sm leading-[18px] font-medium lg:text-lg lg:leading-[22px] lg:tracking-[0.7px]">
+      <span className="text-black text-sm leading-[18px] font-medium lg:font-normal lg:text-lg lg:leading-[22px] lg:tracking-[0.7px]">
         {props.children}
       </span>
     </div>

@@ -7,7 +7,7 @@ const CARDS_MAPPER = {
     bg_color: "bg-dark_violet",
     text_color: "text-white",
     size_phone:
-      "w-[457px] h-[523px] max-xl:w-[380px] max-xl:h-[342px] max-xl:left-[70px] left-[132px] max-xl:top-[80px]",
+      "w-[457px] h-[523px] max-lg:w-[380px] max-lg:h-[342px] max-lg:left-[70px] left-[110px] max-lg:top-[80px]",
     phone: "/images/works/Mockups1.png",
     small_phone: "/images/works/Mockups1m.png",
     alt: "phone_plus",
@@ -33,7 +33,7 @@ const CARDS_MAPPER = {
     bg_color: "bg-[#EFECFC]",
     text_color: "text-black",
     size_phone:
-      "max-xl:w-[400px] max-xl:h-[351px] max-xl:bottom-[100px] w-[500px] h-[585px] left-[69px]",
+      "max-lg:w-[400px] max-lg:h-[351px] max-lg:bottom-[100px] w-[500px] h-[585px] left-[69px]",
     phone: "/images/works/Mockups2.png",
     small_phone: "/images/works/Mockups2m.png",
     alt: "phone_chart",
@@ -51,7 +51,7 @@ const CARDS_MAPPER = {
     bg_color: "bg-violet",
     text_color: "text-white",
     size_phone:
-      "max-xl:w-[420px] max-xl:h-[420px] max-xl:bottom-[50px] max-xl:left-[40px] w-[565px] h-[595px] left-[9px] bottom-[-5px] ",
+      "max-lg:w-[420px] max-lg:h-[420px] max-lg:bottom-[50px] max-xl:left-[40px] w-[565px] h-[595px] left-[9px] bottom-[-5px] ",
     phone: "/images/works/Mockups3.png",
     small_phone: "/images/works/Mockups3m.png",
     alt: "phone_praxis",
@@ -88,9 +88,9 @@ const DetailedCard = (props) => {
         />
 
         <div
-          className={`flex flex-col relative lg:left-[calc(50%-10px)] gap-5 lg:max-w-[480px] w-full ${card.text_color}`}
+          className={`flex flex-col max-xl:mx-auto xl:relative xl:left-[calc(50%-10px)] gap-5 lg:max-w-[480px] lg:w-full ${card.text_color}`}
         >
-          <span className="text-[40px] max-xl:text-3xl leading-[44px] tracking-[0.5px]">
+          <span className="text-2xl xl:text-[40px] max-xl:text-3xl leading-[44px] tracking-[0.5px]">
             {card.text1}
           </span>
 
