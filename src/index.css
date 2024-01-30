@@ -98,7 +98,7 @@ section {
 
 /* MEDIA */
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1280px) {
   section {
     padding: 0;
     margin: 0 40px;
@@ -106,5 +106,11 @@ section {
 
   .card {
     grid-template-rows: repeat(3, 625px);
+  }
+}
+
+@media only screen and (max-width: 1280px) and (min-width: 640px) {
+  .card {
+    grid-template-rows: repeat(3, 810px);
   }
 }

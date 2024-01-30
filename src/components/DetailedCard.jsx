@@ -96,11 +96,11 @@ const DetailedCard = (props) => {
             {card.text1}
           </span>
 
-          <span className="text-sm md:text-base xl:text-lg leading-[16px] font-medium xl:font-normal xl:leading-[22px] tracking-[0.5px] xl:tracking-[0.7px]">
+          <span className="text-sm md:text-base xl:text-lg leading-[16px] font-bold xl:font-normal xl:leading-[22px] tracking-[0.5px] xl:tracking-[0.7px]">
             {card.text2()}
           </span>
           <img src={`/images/works/${card.border}`} alt="#" />
-          <span className="text-[14px] md:text-xl xl:text-[28px] leading-[18px] xl:leading-[38px] tracking-[0.1px] xl:tracking-[0.7px] font-medium xl:font-normal">
+          <span className="text-[14px] md:text-lg xl:text-[28px] leading-[18px] xl:leading-[38px] tracking-[0.1px] xl:tracking-[0.7px] font-medium xl:font-normal">
             {card.text3}
           </span>
           <img src={`/images/works/${card.border}`} alt="#" />
