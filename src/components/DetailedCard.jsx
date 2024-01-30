@@ -7,7 +7,7 @@ const CARDS_MAPPER = {
     bg_color: "bg-dark_violet",
     text_color: "text-white",
     size_phone:
-      "xl:w-[457px] xl:h-[523px] w-[290px] h-[260px] left-[70px] xl:left-[110px] top-[80px]",
+      "xl:w-[457px] xl:h-[523px] md:w-[360px] md:h-[330px] w-[290px] h-[260px] left-[70px] xl:left-[110px] top-[40px]",
     phone: "/images/works/Mockups1.png",
     small_phone: "/images/works/Mockups1m.png",
     alt: "phone_plus",
@@ -34,7 +34,7 @@ const CARDS_MAPPER = {
     bg_color: "bg-[#EFECFC]",
     text_color: "text-black",
     size_phone:
-      "max-xl:w-[290px] max-xl:h-[260px] max-xl:bottom-[100px] w-[500px] h-[585px] left-[69px]",
+      "w-[290px] h-[260px] md:w-[360px] md:h-[330px] xl:w-[500px] xl:h-[585px] left-[69px]",
     phone: "/images/works/Mockups2.png",
     small_phone: "/images/works/Mockups2m.png",
     alt: "phone_chart",
@@ -53,7 +53,7 @@ const CARDS_MAPPER = {
     bg_color: "bg-violet",
     text_color: "text-white",
     size_phone:
-      "max-xl:w-[290px] max-xl:h-[260px] max-xl:bottom-[50px] max-xl:left-[40px] w-[565px] h-[595px] left-[9px] bottom-[-5px] ",
+      "w-[300px] h-[270px] left-[40px] md:w-[360px] md:h-[330px] xl:w-[565px] xl:h-[595px] left-[9px] bottom-[-5px] ",
     phone: "/images/works/Mockups3.png",
     small_phone: "/images/works/Mockups3m.png",
     alt: "phone_praxis",
@@ -76,7 +76,7 @@ const DetailedCard = (props) => {
   return (
     <div className="card" id={card.id}>
       <div
-        className={`relative overflow-hidden w-full xl:h-[625px] p-[20px] lg:pt-10  ${card.bg_color} rounded-[20px] z-10 duration-500`}
+        className={`relative overflow-hidden w-full xl:h-[625px] lg:h-[810px] sm:h-[610px] md:h-[800px] p-[20px] lg:pt-10  ${card.bg_color} rounded-[20px] z-10 duration-500`}
       >
         <img
           className={`absolute max-xl:hidden ${card.size_phone}`}
@@ -90,7 +90,7 @@ const DetailedCard = (props) => {
         />
 
         <div
-          className={`flex flex-col max-xl:mx-auto xl:relative xl:left-[calc(50%-10px)] gap-5 lg:max-w-[480px] lg:w-full ${card.text_color}`}
+          className={`flex flex-col max-xl:mx-auto xl:relative xl:left-[calc(50%-10px)] gap-5 sm:max-w-[420px] xl:max-w-[480px] lg:w-full ${card.text_color}`}
         >
           <span className="text-2xl xl:text-[40px] max-xl:text-3xl leading-[44px] tracking-[0.5px]">
             {card.text1}

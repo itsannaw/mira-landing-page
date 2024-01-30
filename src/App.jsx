@@ -1,4 +1,3 @@
-import "./App.css";
 import About from "./assets/layers/About";
 import Footer from "./assets/layers/Footer";
 import Header from "./assets/layers/Header";
