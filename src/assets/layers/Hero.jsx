@@ -13,7 +13,7 @@ const Hero = () => {
                   Ментальная поддержка в вашем смартфоне
                 </span>
               </div>
-              <div className="text-center font-medium lg:font-normal text-sm lg:text-lg leading-[18px] lg:leading-[22px] tracking-[0.7px] lg:text-left flex flex-col lg:max-w-[400px] gap-5">
+              <div className="text-center font-medium xl:font-normal text-sm xl:text-lg leading-[18px] xl:leading-[22px] tracking-[0.7px] lg:text-left flex flex-col lg:max-w-[400px] gap-5">
                 <span>
                   Познакомьтесь с приложением «Мира» – трекером эмоций с
                   возможностью выполнять особые упражнения для улучшения своего
@@ -40,14 +40,14 @@ const Hero = () => {
               </div>
               <div className="hidden lg:block relative">
                 <img
-                  className="absolute w-[86px] h-[58px] left-[-94px] top-4"
+                  className="max-xl:hidden absolute w-[86px] h-[58px] left-[-94px] top-4"
                   src="/images/vectors/VectorHero.png"
                   alt="cloud_part"
                 />
               </div>
             </div>
 
-            <div className="hidden lg:flex flex-col items-end absolute top-[350px] right-[60px] gap-2">
+            <div className="hidden lg:flex flex-col items-end absolute top-[320px] xl:top-[350px] right-[60px] gap-2">
               <img src="/images/QR.jpg" alt="#" />
               <span className="flex text-sm text-end">
                 Скачать приложение <br /> на смартфон
@@ -62,7 +62,7 @@ const Hero = () => {
               Хочу узнать о приложении
             </Button>
             <img
-              className="absolute w-16 h-10 buttom-[0px] right-[-15px] top-6"
+              className="max-xl:hidden absolute w-16 h-10 buttom-[0px] right-[-15px] top-5 2xl:top-6"
               src="/images/vectors/VectorButton.png"
               alt="#"
             />

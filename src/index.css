@@ -63,7 +63,7 @@ section {
   list-style: none;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(3, 720px);
+  grid-template-rows: repeat(3, 700px);
 }
 
 #card1 {
@@ -87,10 +87,10 @@ section {
 .mira-header-before::before {
   content: '';
   display: block;
-  width: calc(100% + 40px);
-  height: 100%;
+  width: calc(100% + 50px);
+  height: 101%;
   position: absolute;
-  left: -20px;
+  left: -25px;
   top: 0;
   z-index: 1;
   background-color: white;

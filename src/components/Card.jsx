@@ -31,7 +31,7 @@ const Card = (props) => {
     <div className="flex flex-col gap-[13px] lg:gap-5 bg-[#F6F5F8] rounded-[20px] max-w-[380px] lg:max-w-[427px] w-full py-5 px-[19px] md:py-8 md:px-9 shadow-card">
       <div className="flex gap-3 justify-center max-md:items-center">
         <button className="flex justify-center items-center max-w-[230px] md:max-w-[287px] w-full text-white bg-violet rounded-3xl py-[10px] px-3 border-2 border-[#CFD0DA] cursor-default">
-          <span className="text-[12px] md:text-sm lg:text-base xl:text-lg leading-[22px] tracking-[0.7px]">
+          <span className="text-sm font-medium lg:font-normal lg:text-base xl:text-lg leading-[22px] tracking-[0.7px]">
             {cards.button_text}
           </span>
         </button>
@@ -43,9 +43,9 @@ const Card = (props) => {
           />
         </div>
       </div>
-      <div className="flex flex-col  justify-between gap-5 md:h-[195px]">
+      <div className="flex flex-col  justify-between gap-2 xl:gap-5 md:h-[150px] xl:h-[195px]">
         <img src="/images/works/border_dark.png" alt="" />
-        <span className="md:h-[150px] text-sm leading-[18px] font-medium lg:font-normal lg:text-base lg:leading-[22px] tracking-[0.1px]">
+        <span className="xl:h-[150px] text-sm leading-[18px] font-medium xl:font-normal xl:text-base xl:leading-[22px] tracking-[0.1px]">
           {props.children}
         </span>
         <img src="/images/works/border_dark.png" alt="" />

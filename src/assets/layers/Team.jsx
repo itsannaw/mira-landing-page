@@ -8,26 +8,28 @@ import { BUTTON_TYPES, TEAM } from "../../const";
 
 const Team = () => {
   return (
-    <section className="flex relative mt-[70px] justify-center flex-col">
+    <section className="flex relative mt-[300px] lg:mt-[250px] xl:mt-[90px] justify-center flex-col">
       <div className="flex">
-        <div id="team" className="lg:absolute left-0">
+        <div id="team" className="xl:absolute left-0">
           <Hashtag>
-            <span className="px-5"># Команда</span>
+            <span className="px-2"># Команда</span>
           </Hashtag>
         </div>
       </div>
-      <div className="flex flex-col-reverse lg:flex-row relative justify-center gap-[60px]">
-        <div className="block lg:hidden">
-          <span className="font-bold">Мы ищем:</span>
+      <div className="flex flex-col-reverse lg:flex-row relative justify-center gap-5 lg:gap-[60px]">
+        <div className="lg:hidden flex flex-col mx-auto gap-3">
+          <span className="font-normal text-2xl leading-[30px] tracking-[0.5px]">
+            Мы ищем:
+          </span>
           <div className="flex flex-col gap-2">
             <SearchList>iOS-разработчиков</SearchList>
             <SearchList>Мамкиных пирожочков</SearchList>
             <SearchList>Fullstack superhero </SearchList>
           </div>
-          <div>
+          <div className="mt-2">
             <form action="https://t.me/L_Tyler" target="_blank">
               <Button type={BUTTON_TYPES.BIG}>
-                <span className="px-10 text-2xl font-semibold leading-7 tracking-[0.1px]">
+                <span className="px-10 text-[16px] font-semibold leading-6 tracking-[0.1px]">
                   Хочу в вашу команду
                 </span>
               </Button>
@@ -37,7 +39,7 @@ const Team = () => {
         <div className="items-start lg:mt-[120px] lg:w-[400px]">
           <Swiper modules={[Pagination]} pagination={{ clickable: true }}>
             <SwiperSlide>
-              <div className="flex flex-col items-start gap-[14px] mb-12">
+              <div className="flex flex-col items-start gap-[10px] mb-10 xl:mb-12">
                 <PositionsTeam type={TEAM.ANDROID} />
                 <PositionsTeam type={TEAM.ANDROID} />
                 <PositionsTeam type={TEAM.ANDROID} />
@@ -49,7 +51,7 @@ const Team = () => {
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div className="flex flex-col items-start gap-[14px]">
+              <div className="flex flex-col items-start gap-[10px]">
                 <PositionsTeam type={TEAM.ANDROID} />
                 <PositionsTeam type={TEAM.ANDROID} />
                 <PositionsTeam type={TEAM.ANDROID} />
@@ -60,9 +62,9 @@ const Team = () => {
             </SwiperSlide>
           </Swiper>
         </div>
-        <div className="flex flex-col gap-[26px] lg:max-w-[480px] w-full text-black text-lg leading-[22px] tracking-[0.7px]">
-          <div className="text-center lg:text-left flex flex-col gap-[12px]">
-            <div className="pt-[12px] lg:pt-0 text-black text-[40px] leading-[44px] tracking-[0.5px]">
+        <div className="flex flex-col gap-[20px] lg:max-w-[480px] w-full text-black text-sm leading-[18px] xl:text-lg xl:leading-[22px] xl:tracking-[0.7px]">
+          <div className="text-center lg:text-left flex flex-col gap-3 lg:gap-[26px] max-lg:max-w-[460px] max-lg:mx-auto font-medium xl:font-normal">
+            <div className="pt-[12px] lg:pt-0 text-black lg:text-[40px] font-normal max-lg:max-w-[340px] max-lg:mx-auto text-2xl lg:leading-[44px] leading-[30px] tracking-[0.5px]">
               Кто разработал приложение?
             </div>
             <div>
@@ -93,8 +95,8 @@ const Team = () => {
             </div>
             <div>
               <form action="https://t.me/L_Tyler" target="_blank">
-                <Button type={BUTTON_TYPES.BIG}>
-                  <span className="px-10 text-2xl font-semibold leading-7 tracking-[0.1px]">
+                <Button type={BUTTON_TYPES.BIG} className="py-1">
+                  <span className="px-10 text-[20px] xl:text-2xl font-semibold leading-7 tracking-[0.1px]">
                     Хочу в вашу команду
                   </span>
                 </Button>
