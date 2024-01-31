@@ -26,6 +26,14 @@ section {
   padding: 0 15px;
 }
 
+#mobile-download path {
+  stroke: #6E78D1;
+}
+
+#mobile-download:active path {
+  stroke: #fff;
+}
+
 /* swiper  */
 
 .swiper {

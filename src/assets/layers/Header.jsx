@@ -1,4 +1,5 @@
 import Button from "../../components/Button";
+import DownloadButtonMob from "../../components/DownloadButtonMob";
 import { BUTTON_TYPES } from "../../const";
 import { SCROLL_TYPES, scrollToType } from "../../helpers/scrollToType";
 
@@ -46,9 +47,7 @@ const Header = () => {
               >
                 Скачать версию для Android
               </Button>
-              <button className="flex lg:hidden px-5 py-[5px] border-violet border-2 rounded-[16px] items-center">
-                <img src="/images/download.svg" alt="download" />
-              </button>
+              <DownloadButtonMob />
             </div>
           </div>
         </div>
