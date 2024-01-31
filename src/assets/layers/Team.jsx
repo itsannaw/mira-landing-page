@@ -8,13 +8,11 @@ import { BUTTON_TYPES, TEAM } from "../../const";
 
 const Team = () => {
   return (
-    <section className="flex relative mt-[300px] lg:mt-[250px] xl:mt-[90px] justify-center flex-col">
-      <div className="flex">
-        <div id="team" className="xl:absolute left-0">
-          <Hashtag>
-            <span className="px-2"># Команда</span>
-          </Hashtag>
-        </div>
+    <section className="flex relative mt-[20px] max-[450px]:mt-[80px] min-[450px]:mt-[20px] min-[490px]:mt-[-20px] min-[550px]:mt-[-50px] sm:mt-[10px] md:mt-[200px] lg:mt-[280px] xl:mt-[90px] justify-center flex-col">
+      <div id="team" className="lg:absolute top-0">
+        <Hashtag>
+          <span className="px-2"># Команда</span>
+        </Hashtag>
       </div>
       <div className="flex flex-col-reverse lg:flex-row relative justify-center gap-5 lg:gap-[60px]">
         <div className="lg:hidden flex flex-col mx-auto gap-3">
@@ -67,6 +65,7 @@ const Team = () => {
             <div className="pt-[12px] lg:pt-0 text-black lg:text-[40px] font-normal max-lg:max-w-[340px] max-lg:mx-auto text-2xl lg:leading-[44px] leading-[30px] tracking-[0.5px]">
               Кто разработал приложение?
             </div>
+
             <div>
               Мира была разработана командой из N человек. Над приложением
               трудились специалисты разных сфер: аналитики, дизайнеры,

@@ -30,7 +30,7 @@ const Card = (props) => {
   return (
     <div className="flex flex-col gap-[13px] lg:gap-5 bg-[#F6F5F8] rounded-[20px] max-w-[380px] lg:max-w-[427px] w-full py-5 px-[19px] md:py-8 md:px-9 shadow-card">
       <div className="flex gap-3 justify-center max-md:items-center">
-        <button className="flex justify-center items-center max-w-[230px] md:max-w-[287px] w-full text-white bg-violet rounded-3xl py-[10px] px-3 border-2 border-[#CFD0DA] cursor-default">
+        <button className="flex justify-center items-center max-w-[230px] md:max-w-[230px] lg:max-w-[287px] w-full text-white bg-violet rounded-3xl py-[10px] px-3 border-2 border-[#CFD0DA] cursor-default">
           <span className="text-sm font-medium lg:font-normal lg:text-base xl:text-lg leading-[22px] tracking-[0.7px]">
             {cards.button_text}
           </span>
