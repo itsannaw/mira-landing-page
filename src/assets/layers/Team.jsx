@@ -8,14 +8,14 @@ import { BUTTON_TYPES, TEAM } from "../../const";
 
 const Team = () => {
   return (
-    <section className="flex relative mt-[20px] max-[450px]:mt-[80px] min-[450px]:mt-[20px] min-[490px]:mt-[-20px] min-[550px]:mt-[-50px] sm:mt-[10px] md:mt-[200px] lg:mt-[280px] xl:mt-[90px] justify-center flex-col">
+    <section className="flex relative mt-[20px] max-[450px]:mt-[60px] min-[450px]:mt-[20px] min-[490px]:mt-[-20px] min-[550px]:mt-[-50px] sm:mt-[10px] md:mt-[200px] lg:mt-[280px] xl:mt-[90px] justify-center flex-col">
       <div id="team" className="lg:absolute top-0">
         <Hashtag>
           <span className="px-2"># Команда</span>
         </Hashtag>
       </div>
       <div className="flex flex-col-reverse lg:flex-row relative justify-center gap-5 lg:gap-[60px]">
-        <div className="lg:hidden flex flex-col mx-auto gap-3">
+        <div className="lg:hidden flex flex-col min-[450px]:mx-auto gap-3">
           <span className="font-normal text-2xl leading-[30px] tracking-[0.5px]">
             Мы ищем:
           </span>
@@ -26,7 +26,10 @@ const Team = () => {
           </div>
           <div className="mt-2">
             <form action="https://t.me/L_Tyler" target="_blank">
-              <Button type={BUTTON_TYPES.BIG}>
+              <Button
+                type={BUTTON_TYPES.BIG}
+                className=" max-[400px]:w-full justify-center"
+              >
                 <span className="px-10 text-[16px] font-semibold leading-6 tracking-[0.1px]">
                   Хочу в вашу команду
                 </span>
