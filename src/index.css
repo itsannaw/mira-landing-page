@@ -125,11 +125,11 @@ section {
 
 @media only screen and (max-width: 1024px) and (min-width: 768px) {
   #cards {
-    grid-template-rows: repeat(3, 780px);
+    grid-template-rows: repeat(3, 440px);
   }
 }
 
-@media only screen and (max-width: 768px) and (min-width: 640px) {
+@media only screen and (max-width: 767px) and (min-width: 640px) {
   #cards {
     grid-template-rows: repeat(3, 590px);
   }
