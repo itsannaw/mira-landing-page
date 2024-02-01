@@ -39,7 +39,7 @@ const Header = () => {
             </a>
           </div>
           <div className="flex justify-between items-center gap-10">
-            <div className="hidden lg:flex gap-4">{links}</div>
+            <div className="hidden lg:flex gap-7">{links}</div>
             <div>
               <Button
                 type={BUTTON_TYPES.SMALL}
