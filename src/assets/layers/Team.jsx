@@ -8,7 +8,7 @@ import { BUTTON_TYPES, TEAM } from "../../const";
 
 const Team = () => {
   return (
-    <section className="flex relative mt-[20px] max-[450px]:mt-[60px] min-[450px]:mt-[20px] min-[490px]:mt-[-20px] min-[550px]:mt-[-50px] sm:mt-[10px] md:mt-[200px] lg:mt-[280px] xl:mt-[90px] justify-center flex-col">
+    <section className="flex relative mt-[20px] max-[450px]:mt-[160px] min-[450px]:mt-[125px] min-[490px]:mt-[110px] min-[550px]:mt-[90px] sm:mt-[95px] md:mt-[110px] lg:mt-[200px] xl:mt-[170px] justify-center flex-col">
       <div id="team" className="lg:absolute top-0">
         <Hashtag>
           <span className="px-2"># Команда</span>
@@ -63,9 +63,9 @@ const Team = () => {
             </SwiperSlide>
           </Swiper>
         </div>
-        <div className="flex flex-col gap-[20px] lg:max-w-[480px] w-full text-black text-sm leading-[18px] xl:text-lg xl:leading-[22px] xl:tracking-[0.7px]">
+        <div className="flex flex-col gap-[20px] lg:max-xl:max-w-[390px] xl:max-w-[480px] w-full text-black text-sm leading-[18px] xl:text-lg xl:leading-[22px] xl:tracking-[0.7px]">
           <div className="text-center lg:text-left flex flex-col gap-3 lg:gap-[26px] max-lg:max-w-[460px] max-lg:mx-auto font-medium xl:font-normal">
-            <div className="pt-[12px] lg:pt-0 text-black lg:text-[40px] font-normal max-lg:max-w-[340px] max-lg:mx-auto text-2xl lg:leading-[44px] leading-[30px] tracking-[0.5px]">
+            <div className="pt-[12px] lg:pt-0 text-black lg:text-[40px] font-normal max-lg:max-w-[340px]  max-lg:mx-auto text-2xl lg:leading-[44px] leading-[30px] tracking-[0.5px]">
               Кто разработал приложение?
             </div>
 

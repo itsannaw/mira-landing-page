@@ -71,7 +71,7 @@ section {
   list-style: none;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(3, 700px);
+  grid-template-rows: repeat(3, 610px);
 }
 
 #card1 {
@@ -112,13 +112,31 @@ section {
     margin: 0 40px;
   }
 
-  .card {
+  #cards {
     grid-template-rows: repeat(3, 625px);
   }
 }
 
-@media only screen and (max-width: 1280px) and (min-width: 640px) {
-  .card {
-    grid-template-rows: repeat(3, 840px);
+@media only screen and (max-width: 1280px) and (min-width: 1024px) {
+  #cards {
+    grid-template-rows: repeat(3, 420px);
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 768px) {
+  #cards {
+    grid-template-rows: repeat(3, 780px);
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 640px) {
+  #cards {
+    grid-template-rows: repeat(3, 590px);
+  }
+}
+
+@media only screen and (max-width: 640px) and (min-width: 480px) {
+  #cards {
+    grid-template-rows: repeat(3, 570px);
   }
 }

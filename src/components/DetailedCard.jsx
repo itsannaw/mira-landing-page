@@ -18,8 +18,8 @@ const CARDS_MAPPER = {
         Зафиксировать своё состояние очень просто: <br /> &nbsp; • по кнопке
         открывается экран чек-ина <br /> &nbsp; • Мира задаст 2 вопроса: как ты
         себя чувствуешь и с чем связано это состояние <br /> &nbsp; • в процессе
-        чек-ина можно оставить заметку о своем состоянии, описать
-        ситуацию более подробно.
+        чек-ина можно оставить заметку о своем состоянии, описать ситуацию более
+        подробно.
       </span>
     ),
     text3:
@@ -75,7 +75,7 @@ const DetailedCard = (props) => {
   return (
     <div className="card" id={card.id}>
       <div
-        className={`relative overflow-hidden w-full xl:h-[625px] lg:h-[810px] sm:h-[610px] md:h-[800px] p-[20px] lg:pt-10  ${card.bg_color} rounded-[20px] z-10 duration-500`}
+        className={`relative overflow-hidden w-full xl:h-[625px] sm:h-[590px] md:h-[780px] lg:h-[440px] p-[20px] md:pt-10  ${card.bg_color} rounded-[20px] z-10 duration-500`}
       >
         <img
           className={`absolute max-xl:hidden ${card.size_phone}`}
@@ -89,25 +89,30 @@ const DetailedCard = (props) => {
         />
 
         <div
-          className={`flex flex-col max-xl:mx-auto xl:relative xl:left-[calc(50%-10px)] gap-5 sm:max-w-[420px] xl:max-w-[480px] lg:w-full ${card.text_color}`}
+          className={`flex max-lg:flex-col flex-row-reverse max-xl:mx-auto max-xl:items-center justify-center xl:relative xl:left-[calc(50%-10px)] gap-5 xl:max-w-[500px] lg:w-full ${card.text_color}`}
         >
-          <span className="text-2xl xl:text-[40px] max-xl:text-3xl leading-[44px] tracking-[0.5px]">
-            {card.text1}
-          </span>
+          <div className="flex flex-col w-full max-w-[480px] gap-5">
+            <span className="text-2xl xl:text-[40px] max-xl:text-3xl leading-[44px] tracking-[0.5px]">
+              {card.text1}
+            </span>
 
-          <span className="text-sm md:text-base xl:text-lg leading-[16px] font-bold xl:font-normal xl:leading-[22px] tracking-[0.5px] xl:tracking-[0.7px]">
-            {card.text2()}
-          </span>
-          <img src={`/images/works/${card.border}`} alt="#" />
-          <span className="text-[14px] md:text-lg xl:text-[28px] leading-[18px] xl:leading-[38px] tracking-[0.1px] xl:tracking-[0.7px] font-medium xl:font-normal">
-            {card.text3}
-          </span>
-          <img src={`/images/works/${card.border}`} alt="#" />
-          <img
-            className={`xl:hidden flex justify-center items-center mx-auto ${card.size_phone}`}
-            src={card.small_phone}
-            alt="phone"
-          />
+            <span className="text-sm md:text-base xl:text-lg leading-[16px] font-bold xl:font-normal xl:leading-[22px] tracking-[0.5px] xl:tracking-[0.7px]">
+              {card.text2()}
+            </span>
+            <img src={`/images/works/${card.border}`} alt="#" />
+            <span className="text-[14px] md:text-lg xl:text-[28px] leading-[18px] xl:leading-[38px] tracking-[0.1px] xl:tracking-[0.7px] font-medium xl:font-normal">
+              {card.text3}
+            </span>
+
+            <img src={`/images/works/${card.border}`} alt="#" />
+          </div>
+          <div>
+            <img
+              className={`xl:hidden flex justify-center items-center mx-auto ${card.size_phone}`}
+              src={card.small_phone}
+              alt="phone"
+            />
+          </div>
         </div>
       </div>
     </div>
