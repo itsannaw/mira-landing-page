@@ -75,7 +75,7 @@ const DetailedCard = (props) => {
   return (
     <div className="card" id={card.id}>
       <div
-        className={`relative overflow-hidden w-full xl:h-[625px] sm:h-[590px] md:h-[780px] lg:h-[440px] p-[20px] md:pt-10  ${card.bg_color} rounded-[20px] z-10 duration-500`}
+        className={`relative overflow-hidden w-full xl:h-[625px] sm:h-[590px] min-[767px]:h-[780px] lg:h-[440px] p-[20px] md:pt-10  ${card.bg_color} rounded-[20px] z-10 duration-500`}
       >
         <img
           className={`absolute max-xl:hidden ${card.size_phone}`}
@@ -89,7 +89,7 @@ const DetailedCard = (props) => {
         />
 
         <div
-          className={`flex max-lg:flex-col flex-row-reverse max-xl:mx-auto max-xl:items-center justify-center xl:relative xl:left-[calc(50%-10px)] gap-5 xl:max-w-[500px] lg:w-full ${card.text_color}`}
+          className={`flex flex-col min-[767px]:flex-row-reverse max-xl:mx-auto max-xl:items-center justify-center xl:relative xl:left-[calc(50%-10px)] gap-5 xl:max-w-[500px] lg:w-full ${card.text_color}`}
         >
           <div className="flex flex-col w-full max-w-[480px] gap-5">
             <span className="text-2xl xl:text-[40px] max-xl:text-3xl leading-[44px] tracking-[0.5px]">

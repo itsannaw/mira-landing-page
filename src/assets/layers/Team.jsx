@@ -8,7 +8,7 @@ import { BUTTON_TYPES, TEAM } from "../../const";
 
 const Team = () => {
   return (
-    <section className="flex relative mt-[20px] max-[450px]:mt-[160px] min-[450px]:mt-[125px] min-[490px]:mt-[110px] min-[550px]:mt-[90px] sm:mt-[95px] md:mt-[110px] lg:mt-[200px] xl:mt-[170px] justify-center flex-col">
+    <section className="flex relative max-[450px]:mt-[160px] min-[450px]:mt-[125px] min-[490px]:mt-[110px] min-[550px]:mt-[90px] sm:mt-[95px] md:mt-[110px] lg:mt-[200px] xl:mt-[170px] justify-center flex-col">
       <div id="team" className="lg:absolute top-0">
         <Hashtag>
           <span className="px-2"># Команда</span>
