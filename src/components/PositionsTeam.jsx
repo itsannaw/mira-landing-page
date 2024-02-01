@@ -17,7 +17,7 @@ const PositionsTeam = (props) => {
   }, [props.type]);
 
   return (
-    <div className="flex flex-col gap-[10px]">
+    <div className="flex flex-col gap-[10px] px-5">
       <div className="flex max-w-[397px] w-full justify-between items-center">
         <div className="flex gap-8 items-center">
           <img src={team.src} alt={team.alt} />

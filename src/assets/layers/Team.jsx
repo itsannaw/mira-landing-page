@@ -16,7 +16,7 @@ const Team = () => {
       </div>
       <div className="flex flex-col-reverse lg:flex-row relative justify-center gap-5 lg:gap-[60px]">
         <div className="lg:hidden flex flex-col min-[450px]:mx-auto gap-3">
-          <span className="font-normal text-2xl leading-[30px] tracking-[0.5px]">
+          <span className="mx-auto font-normal text-2xl leading-[30px] tracking-[0.5px]">
             Мы ищем:
           </span>
           <div className="flex flex-col gap-2">
@@ -28,7 +28,7 @@ const Team = () => {
             <form action="https://t.me/L_Tyler" target="_blank">
               <Button
                 type={BUTTON_TYPES.BIG}
-                className=" max-[400px]:w-full justify-center"
+                className=" max-[450px]:w-full justify-center"
               >
                 <span className="px-10 text-[16px] font-semibold leading-6 tracking-[0.1px]">
                   Хочу в вашу команду
@@ -37,7 +37,7 @@ const Team = () => {
             </form>
           </div>
         </div>
-        <div className="items-start lg:mt-[120px] lg:w-[400px]">
+        <div className="items-start lg:mt-[120px] lg:w-[420px] lg:mr-[-20px]">
           <Swiper modules={[Pagination]} pagination={{ clickable: true }}>
             <SwiperSlide>
               <div className="flex flex-col items-start gap-[10px] mb-10 xl:mb-12">
