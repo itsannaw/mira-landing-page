@@ -125,7 +125,7 @@ const PositionsTeam = (props) => {
     <div className="flex flex-col px-1 xl:max-w-[287px] max-w-[329px] w-full border-b-2 border-[#CFD0DA] pb-[10px]">
       <div className="flex xl:max-w-[287px] xl:h-[65.5px] gap-[10px] xl:gap-[20px] w-full items-center">
         <img id="team_avatar" src={team.src} alt={team.alt} />
-        <div className="flex xl:flex-col xl:items-start xl:gap-1 justify-between w-full">
+        <div className="flex xl:flex-col xl:items-start min-[1345px]:gap-1 justify-between w-full">
           <div className="flex flex-col max-xl:max-w-[100px] text-sm xl:text-lg font-medium xl:font-normal leading-[18px] xl:leading-[22px] tracking-[0.1px] xl:tracking-[0.7px]">
             <span>{team.first_name}</span>
             <span>{team.last_name}</span>
