@@ -89,7 +89,7 @@ const DetailedCard = (props) => {
         />
 
         <div
-          className={`flex flex-col md:flex-row-reverse max-xl:mx-auto max-xl:items-center justify-center xl:relative xl:left-[calc(50%-10px)] gap-5 xl:max-w-[500px] lg:w-full ${card.text_color}`}
+          className={`flex flex-col md:flex-row-reverse max-xl:mx-auto max-xl:items-center justify-center xl:relative xl:left-[calc(50%)] gap-5 xl:max-w-[500px] lg:w-full ${card.text_color}`}
         >
           <div className="flex flex-col w-full max-w-[480px] gap-5">
             <span className="text-2xl xl:text-[40px] max-xl:text-3xl leading-[44px] tracking-[0.5px]">
