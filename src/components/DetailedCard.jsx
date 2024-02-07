@@ -96,7 +96,7 @@ const DetailedCard = (props) => {
               {card.text1}
             </span>
 
-            <span className="text-sm md:text-[14px] xl:text-lg leading-[16px] font-bold xl:font-normal xl:leading-[22px] tracking-[0.5px] xl:tracking-[0.7px]">
+            <span className="text-[12px] md:text-[14px] xl:text-lg leading-[16px] font-normal xl:leading-[22px] tracking-[0.5px] xl:tracking-[0.7px]">
               {card.text2()}
             </span>
             <img src={`/images/works/${card.border}`} alt="#" />
