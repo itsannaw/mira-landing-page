@@ -122,7 +122,7 @@ const PositionsTeam = (props) => {
   }, [props.type]);
 
   return (
-    <div className="flex flex-col px-1 xl:max-w-[287px] max-w-[329px] w-full border-b-2 border-[#CFD0DA] pb-[10px]">
+    <div className="flex flex-col mx-auto px-1 xl:max-w-[287px] max-w-[329px] w-full border-b-2 border-[#CFD0DA] pb-[10px]">
       <div className="flex xl:max-w-[287px] xl:h-[65.5px] gap-[10px] xl:gap-[20px] w-full items-center">
         <img id="team_avatar" src={team.src} alt={team.alt} />
         <div className="flex xl:flex-col xl:items-start min-[1345px]:gap-1 justify-between w-full">

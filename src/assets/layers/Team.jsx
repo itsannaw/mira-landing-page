@@ -14,7 +14,7 @@ const Team = () => {
           <span className="px-2"># Команда</span>
         </Hashtag>
       </div>
-      <div className="flex flex-col-reverse xl:flex-row relative justify-center xl:justify-around  max-xl:mx-auto gap-5 items-center xl:gap-[60px]">
+      <div className="flex flex-col-reverse xl:flex-row relative m-0 justify-center xl:justify-around gap-5 items-center xl:gap-[60px]">
         <div className="xl:hidden flex flex-col min-[450px]:mx-auto gap-3">
           <span className="mx-auto font-normal text-2xl leading-[30px] tracking-[0.5px]">
             Мы ищем:
@@ -37,7 +37,7 @@ const Team = () => {
             </form>
           </div>
         </div>
-        <div className="xl:hidden max-w-[380px] w-full">
+        <div className="xl:hidden max-w-[360px]">
           <Swiper modules={[Pagination]} pagination={{ clickable: true }}>
             <SwiperSlide>
               <div className="flex flex-col  max-w-[329px] w-full items-start gap-[10px] mb-10 xl:mb-12">
@@ -68,7 +68,7 @@ const Team = () => {
             </SwiperSlide>
           </Swiper>
         </div>
-        <div className="max-xl:hidden flex gap-4 justify-center w-1/2 xl:mt-[120px]">
+        <div className="max-xl:hidden flex gap-4 justify-center xl:w-1/2 xl:mt-[120px]">
           <div className="flex flex-col gap-[10px] xl:max-w-[287px] w-full">
             <PositionsTeam type={TEAM.PROJECT_MANAGER_MARIA} />
             <PositionsTeam type={TEAM.PSIHOLOG_IRINA} />
@@ -90,7 +90,7 @@ const Team = () => {
             <PositionsTeam type={TEAM.FULLSTACK_ANONIM} />
           </div>
         </div>
-        <div className="flex flex-col xl:w-1/2 gap-[20px] lg:max-xl:max-w-[390px] w-full text-black text-sm leading-[18px] xl:text-lg xl:leading-[22px] xl:tracking-[0.7px]">
+        <div className="flex flex-col xl:w-1/2 gap-[20px] lg:max-xl:max-w-[390px]  w-full text-black text-sm leading-[18px] xl:text-lg xl:leading-[22px] xl:tracking-[0.7px]">
           <div className="text-center xl:text-left flex flex-col gap-3 lg:gap-[26px] max-lg:max-w-[460px] xl:max-w-[479px] max-lg:mx-auto font-medium xl:font-normal">
             <div className="pt-[12px] lg:pt-0 text-black lg:text-[40px] font-normal max-lg:max-w-[340px]  max-lg:mx-auto text-2xl lg:leading-[44px] leading-[30px] tracking-[0.5px]">
               Кто разработал приложение?
