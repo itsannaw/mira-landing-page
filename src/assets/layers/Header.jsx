@@ -41,13 +41,17 @@ const Header = () => {
           <div className="flex justify-between items-center gap-10">
             <div className="hidden lg:flex gap-7">{links}</div>
             <div>
-              <Button
-                type={BUTTON_TYPES.SMALL}
-                className="text-sm font-normal max-lg:hidden"
-              >
-                Скачать версию для Android
-              </Button>
-              <DownloadButtonMob />
+              <a href="https://cdn.discordapp.com/attachments/1204454830639292467/1205094564227063840/mira-v0.6.17-ip-release.apk?ex=65d71ec5&is=65c4a9c5&hm=5996fe0d9602f84f15aeb8c16ff3b560b888b6516ddd38b8b531e8f97b1ad5af&">
+                <Button
+                  type={BUTTON_TYPES.SMALL}
+                  className="text-sm font-normal max-lg:hidden"
+                >
+                  Скачать версию для Android
+                </Button>
+              </a>
+              <a href="https://cdn.discordapp.com/attachments/1204454830639292467/1205094564227063840/mira-v0.6.17-ip-release.apk?ex=65d71ec5&is=65c4a9c5&hm=5996fe0d9602f84f15aeb8c16ff3b560b888b6516ddd38b8b531e8f97b1ad5af&">
+                <DownloadButtonMob />
+              </a>
             </div>
           </div>
         </div>

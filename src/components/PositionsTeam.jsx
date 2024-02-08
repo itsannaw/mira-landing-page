@@ -69,7 +69,7 @@ const TEAM_MAPPER = {
     src: "/images/team/avatars/NataliaAQA.png",
     alt: "img",
     first_name: "Наталья",
-    last_name: "Фамилия",
+    last_name: "Автотестер",
     position: "AQA-engineer",
   },
   [TEAM.BA_ELENA]: {

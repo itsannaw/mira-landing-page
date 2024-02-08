@@ -36,12 +36,14 @@ const Hero = () => {
                 />
               </div>
               <div className="flex">
-                <Button
-                  className="max-lg:mx-auto max-lg:w-full justify-center max-w-[330px] lg:max-w-none"
-                  type={BUTTON_TYPES.BIG}
-                >
-                  Скачать версию для Android
-                </Button>
+                <a href="https://cdn.discordapp.com/attachments/1204454830639292467/1205094564227063840/mira-v0.6.17-ip-release.apk?ex=65d71ec5&is=65c4a9c5&hm=5996fe0d9602f84f15aeb8c16ff3b560b888b6516ddd38b8b531e8f97b1ad5af&">
+                  <Button
+                    className="max-lg:mx-auto max-lg:w-full justify-center max-w-[330px] lg:max-w-none"
+                    type={BUTTON_TYPES.BIG}
+                  >
+                    Скачать версию для Android
+                  </Button>
+                </a>
               </div>
               <div className="hidden lg:block relative">
                 <img
@@ -53,7 +55,7 @@ const Hero = () => {
             </div>
 
             <div className="hidden lg:flex flex-col items-end absolute top-[320px] xl:top-[340px] 2xl:top-[360px] right-[70px] gap-2">
-              <img src="/images/QR.jpg" alt="#" />
+              <img className="h-[86px] w-[86px]" src="/images/QR.png" alt="#" />
               <span className="flex text-sm text-end">
                 Скачать приложение <br /> на смартфон
               </span>
