@@ -35,10 +35,12 @@ const Hero = () => {
                   alt="phone"
                 />
               </div>
-              <div className="flex">
-                <a href="https://cdn.discordapp.com/attachments/1204454830639292467/1205094564227063840/mira-v0.6.17-ip-release.apk?ex=65d71ec5&is=65c4a9c5&hm=5996fe0d9602f84f15aeb8c16ff3b560b888b6516ddd38b8b531e8f97b1ad5af&">
+              <div className="flex max-lg:mx-auto">
+                <a
+                  href="https://cdn.discordapp.com/attachments/1204454830639292467/1205094564227063840/mira-v0.6.17-ip-release.apk?ex=65d71ec5&is=65c4a9c5&hm=5996fe0d9602f84f15aeb8c16ff3b560b888b6516ddd38b8b531e8f97b1ad5af&"
+                >
                   <Button
-                    className="max-lg:mx-auto max-lg:w-full justify-center max-w-[330px] lg:max-w-none"
+                    className=" max-lg:w-full justify-center max-w-[330px] lg:max-w-none"
                     type={BUTTON_TYPES.BIG}
                   >
                     Скачать версию для Android
