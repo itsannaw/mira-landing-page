@@ -41,7 +41,7 @@ const Header = () => {
           <div className="flex justify-between items-center gap-10">
             <div className="hidden lg:flex gap-7">{links}</div>
             <div>
-              <a href="https://cdn.discordapp.com/attachments/1204454830639292467/1205094564227063840/mira-v0.6.17-ip-release.apk?ex=65d71ec5&is=65c4a9c5&hm=5996fe0d9602f84f15aeb8c16ff3b560b888b6516ddd38b8b531e8f97b1ad5af&">
+              <a href="https://cdn.discordapp.com/attachments/1204454830639292467/1211577742223740939/mira-v1.0.0-ip-release.apk?ex=65eeb4b3&is=65dc3fb3&hm=bedf95b58bedafeb7197cbacc3038cdb0dfcefafd00dd960f1499475bb32d7f9&">
                 <Button
                   type={BUTTON_TYPES.SMALL}
                   className="text-sm font-normal max-lg:hidden"
@@ -49,7 +49,7 @@ const Header = () => {
                   Скачать версию для Android
                 </Button>
               </a>
-              <a href="https://cdn.discordapp.com/attachments/1204454830639292467/1205094564227063840/mira-v0.6.17-ip-release.apk?ex=65d71ec5&is=65c4a9c5&hm=5996fe0d9602f84f15aeb8c16ff3b560b888b6516ddd38b8b531e8f97b1ad5af&">
+              <a href="https://cdn.discordapp.com/attachments/1204454830639292467/1211577742223740939/mira-v1.0.0-ip-release.apk?ex=65eeb4b3&is=65dc3fb3&hm=bedf95b58bedafeb7197cbacc3038cdb0dfcefafd00dd960f1499475bb32d7f9&">
                 <DownloadButtonMob />
               </a>
             </div>
