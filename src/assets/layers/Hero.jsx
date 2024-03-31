@@ -38,6 +38,7 @@ const Hero = () => {
               <div className="flex max-lg:mx-auto">
                 <a
                   href="https://cdn.discordapp.com/attachments/1204454830639292467/1211577742223740939/mira-v1.0.0-ip-release.apk?ex=65eeb4b3&is=65dc3fb3&hm=bedf95b58bedafeb7197cbacc3038cdb0dfcefafd00dd960f1499475bb32d7f9&"
+                  aria-label="Download for Android"
                 >
                   <Button
                     className=" max-lg:w-full justify-center max-w-[330px] lg:max-w-none"

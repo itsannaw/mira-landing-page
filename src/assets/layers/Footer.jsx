@@ -6,7 +6,12 @@ const Footer = () => {
           <span className="flex max-w-[150px] lg:max-w-[170px] text-xs font-bold lg:font-normal lg:text-sm">
             Приложение создано при поддержке
           </span>
-          <a href="https://pnpl.site" target="_blank" rel="noreferrer">
+          <a
+            href="https://pnpl.site"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Website Pineapple Practice"
+          >
             <img
               className="h-[64px] w-[132px]"
               src="/images/footer/Pineapple.png"
@@ -24,7 +29,12 @@ const Footer = () => {
             </span>
           </div>
           <div>
-            <a href="https://t.me/L_Tyler" target="_blank" rel="noreferrer">
+            <a
+              href="https://t.me/L_Tyler"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Telegram"
+            >
               <img src="/images/footer/Telegram.svg" alt="telegram" />
             </a>
           </div>
