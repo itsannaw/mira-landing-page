@@ -1,3 +1,5 @@
+import { LINKS } from "../../consts/links";
+
 const Footer = () => {
   return (
     <section>
@@ -7,7 +9,7 @@ const Footer = () => {
             Приложение создано при поддержке
           </span>
           <a
-            href="https://pnpl.site"
+            href={LINKS.PNPL_PRACTICE}
             target="_blank"
             rel="noreferrer"
             aria-label="Website Pineapple Practice"
@@ -30,7 +32,7 @@ const Footer = () => {
           </div>
           <div>
             <a
-              href="https://t.me/L_Tyler"
+              href={LINKS.CONTACT_US}
               target="_blank"
               rel="noreferrer"
               aria-label="Telegram"

@@ -5,6 +5,7 @@ import Hashtag from "../../components/Hashtag";
 import PositionsTeam from "../../components/PositionsTeam";
 import SearchList from "../../components/SearchList";
 import { BUTTON_TYPES, TEAM } from "../../const";
+import { LINKS } from "../../consts/links";
 
 const Team = () => {
   return (
@@ -25,7 +26,7 @@ const Team = () => {
             <SearchList>Fullstack superhero </SearchList>
           </div>
           <div className="mt-2">
-            <form action="https://t.me/L_Tyler" target="_blank">
+            <form action={LINKS.CONTACT_US} target="_blank">
               <Button
                 type={BUTTON_TYPES.BIG}
                 className=" max-[450px]:w-full justify-center"
@@ -123,7 +124,7 @@ const Team = () => {
               <SearchList>Fullstack superhero </SearchList>
             </div>
             <div>
-              <form action="https://t.me/L_Tyler" target="_blank">
+              <form action={LINKS.CONTACT_US} target="_blank">
                 <Button type={BUTTON_TYPES.BIG} className="py-1">
                   <span className="px-10 text-[20px] xl:text-2xl font-semibold leading-7 tracking-[0.1px]">
                     Хочу в вашу команду

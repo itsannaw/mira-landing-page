@@ -1,6 +1,7 @@
 import Button from "../../components/Button";
 import DownloadButtonMob from "../../components/DownloadButtonMob";
 import { BUTTON_TYPES } from "../../const";
+import { LINKS } from "../../consts/links";
 import { SCROLL_TYPES, scrollToType } from "../../helpers/scrollToType";
 
 const LINKS_META = [
@@ -43,8 +44,9 @@ const Header = () => {
             <div className="hidden lg:flex gap-7">{links}</div>
             <div>
               <a
-                href="https://cdn.discordapp.com/attachments/1204454830639292467/1211577742223740939/mira-v1.0.0-ip-release.apk?ex=65eeb4b3&is=65dc3fb3&hm=bedf95b58bedafeb7197cbacc3038cdb0dfcefafd00dd960f1499475bb32d7f9&"
-                aria-label="Download for Android"
+                href={LINKS.PLAY_MARKET}
+                target="_blank"
+                aria-label="Download for Android" rel="noreferrer"
               >
                 <Button
                   type={BUTTON_TYPES.SMALL}
@@ -54,7 +56,9 @@ const Header = () => {
                 </Button>
               </a>
               <a
-                href="https://cdn.discordapp.com/attachments/1204454830639292467/1211577742223740939/mira-v1.0.0-ip-release.apk?ex=65eeb4b3&is=65dc3fb3&hm=bedf95b58bedafeb7197cbacc3038cdb0dfcefafd00dd960f1499475bb32d7f9&"
+                href={LINKS.PLAY_MARKET}
+                target="_blank"
+                rel="noreferrer"
                 aria-label="Download for Android"
               >
                 <DownloadButtonMob />

@@ -1,5 +1,6 @@
 import Button from "../../components/Button";
 import { BUTTON_TYPES } from "../../const";
+import { LINKS } from "../../consts/links";
 
 const Hero = () => {
   return (
@@ -37,7 +38,9 @@ const Hero = () => {
               </div>
               <div className="flex max-lg:mx-auto">
                 <a
-                  href="https://cdn.discordapp.com/attachments/1204454830639292467/1211577742223740939/mira-v1.0.0-ip-release.apk?ex=65eeb4b3&is=65dc3fb3&hm=bedf95b58bedafeb7197cbacc3038cdb0dfcefafd00dd960f1499475bb32d7f9&"
+                  href={LINKS.PLAY_MARKET}
+                  target="_blank"
+                  rel="noreferrer"
                   aria-label="Download for Android"
                 >
                   <Button
