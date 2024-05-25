@@ -22,8 +22,7 @@ const Team = () => {
           </span>
           <div className="flex flex-col gap-2">
             <SearchList>iOS-разработчиков</SearchList>
-            <SearchList>Мамкиных пирожочков</SearchList>
-            <SearchList>Fullstack superhero </SearchList>
+            <SearchList>Маркетолога</SearchList>
           </div>
           <div className="mt-2">
             <form action={LINKS.CONTACT_US} target="_blank">
@@ -118,10 +117,9 @@ const Team = () => {
           </div>
           <div className="hidden xl:flex xl:flex-col gap-5">
             <span className="font-bold">Мы ищем:</span>
-            <div className="flex flex-col gap-2">
+            <div className="flex flex-col gap-2 pb-16">
               <SearchList>iOS-разработчиков</SearchList>
-              <SearchList>Мамкиных пирожочков</SearchList>
-              <SearchList>Fullstack superhero </SearchList>
+              <SearchList>Маркетолога</SearchList>
             </div>
             <div>
               <form action={LINKS.CONTACT_US} target="_blank">
